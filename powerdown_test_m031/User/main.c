@@ -4,7 +4,7 @@
  * @brief    Demonstrate how to minimize power consumption when entering power down mode.
  *
  * SPDX-License-Identifier: Apache-2.0
- * @copyright (C) 2018 Nuvoton Technology Corp. All rights reserved.
+
  ******************************************************************************/
 #include <stdio.h>
 #include "NuMicro.h"
