@@ -1,0 +1,163 @@
+EVEGAH CALIBRATION PARAMETERS
+
+PRODUCTION / TESTING VERSION
+WEB URL
+SERVICE PROVIDER
+SERIAL NUMBER
+DEVICE ID
+DOM
+BEEP ON
+BEEP OFF
+TEST URL
+LOCK STEPS
+UNLOCK STEPS
+LOCK DELAY
+
+
+<CONFIG><VERSION>PROD</VERSION><URL><APN><SLNO><DEVID><DOM><BEEPON><BEEPOFF><TESTURL><LOCKSTEPS><UNLOCKSTEPS><LOCKDELAY></CONFIG>
+
+
+<CONFIG><VERSION>PROD</VERSION></CONFIG>
+
+
+/***AIRTEL*****/
+<CONFIG><VER>TEST</VER><WURL>http://evegah-admin.kritin.in/api/</WURL><DEVID>&dId=EDELTEMP03</DEVID><APN>airtelgprs.com</APN><TURL>www.edel-iot.com/eVega/edel.txt</TURL><SLNO>0001</SLNO><DOM>010723</DOM><BPON>500</BPON><BPOFF>1000</BPOFF><LKSTEPS>250</LKSTEPS><UNLKSTEPS>300</UNLKSTEPS><LKDELAY>50</LKDELAY></CONFIG>
+
+/********/
+
+/***VI*****/
+<CONFIG><VER>PRODUCTION</VER><WURL>http://evegah-admin.kritin.in/api/</WURL><DEVID>&dId=EDELTEMP03</DEVID><APN>internet</APN><TURL>www.edel-iot.com/eVega/edel.txt</TURL><SLNO>0001</SLNO><DOM>010723</DOM><BPON>500</BPON><BPOFF>1000</BPOFF><LKSTEPS>250</LKSTEPS><UNLKSTEPS>300</UNLKSTEPS><LKDELAY>50</LKDELAY></CONFIG>
+
+/********/
+Testing
+<CONFIG><VER>PRODUCTION</VER><WURL>http://evegah-prod.kritin.in/api/</WURL><DEVID>&dId=EDELTEMP05</DEVID><APN>vodafone.com</APN><TURL>www.edel-iot.com/eVega/edel.txt</TURL><DOM>010723</DOM><BPON>500</BPON><BPOFF>1000</BPOFF><LKSTEPS>250</LKSTEPS><UNLKSTEPS>300</UNLKSTEPS><LKDELAY>50</LKDELAY></CONFIG>
+
+/******/
+
+production
+<CONFIG><VER>PRODUCTION</VER><WURL>http://admin.evegah.com/api/</WURL><DEVID>&dId=EDELTEMP06</DEVID><APN>airtelgprs.com</APN><TURL>www.edel-iot.com/eVega/edel.txt</TURL><SLNO>0001</SLNO><DOM>010723</DOM><BPON>500</BPON><BPOFF>1000</BPOFF><LKSTEPS>250</LKSTEPS><UNLKSTEPS>300</UNLKSTEPS><LKDELAY>50</LKDELAY></CONFIG>
+
+
+<CONFIG>
+<VER></VER>
+<WURL>http://evegah-admin.kritin.in/api/</WURL>
+<DEVID>&dId=EDELTEMP03</DEVID>
+<APN>airtelgprs.com</APN>
+<TURL>www.edel-iot.com/eVega/edel.txt</TURL>
+<SLNO>0001</SLNO>
+<DOM>010723</DOM>
+<BPON>500</BPON>
+<BPOFF>1000</BPOFF>
+<LKSTEPS>250</LKSTEPS>
+<UNLKSTEPS>300</UNLKSTEPS>
+<LKDELAY>50</LKDELAY>
+</CONFIG>
+/*********/
+#ifdef KRITIN_DEV_VER
+uint8_t webURL[API_BUFF_LEN] = "http://evegah-admin.kritin.in/api/";
+#endif
+
+#ifdef KRITIN_PROD_V01
+uint8_t webURL[API_BUFF_LEN] = "http://adm.evegah.com/api/";
+#endif
+
+uint8_t devID[]="&dId=EDELTEMP03";
+
+test string
+
+UART_Write(UART1, "airtelgprs.com",14); 1399, 1419
+
+UART_Write(UART1,"www.edel-iot.com/eVega/edel.txt",31); 1539
+
+/*******************************************************************************************************/
+
+//add device id
+http://evegah-admin.kritin.in/api/addDeviceIdAndInstruction?deviceId=EDELTEMP03&instructionId=1
+http://evegah.kritin.in/api/addDeviceIdAndInstruction?deviceId=EDELTEMP03&instructionId=1
+http://evegah.kritin.in/api/addDeviceIdAndInstruction?deviceId=EDELTEMP04&instructionId=1
+
+// below api for mobile app or browser
+
+this are the instruction id
+deviceRegistration: 1,
+deviceUnlock: 2,
+deviceLock: 3,
+noInstruction: 4
+    
+    
+// API FOR MOBILE OR BROWSER    
+http://evegah-admin.kritin.in/api/setInstructionToLockUnlockDevice?deviceId=EDELTEMP03&instructionId=2  ---- this api used in mobile app for 
+
+http://evegah.kritin.in/api/setInstructionToLockUnlockDevice?deviceId=EDELTEMP03&instructionId=2
+http://evegah.kritin.in/api/setInstructionToLockUnlockDevice?deviceId=EDELTEMP04&instructionId=2
+
+
+// from device periodically
+http://evegah-admin.kritin.in/api/getDeviceInstructions?deviceId=EDELTEMP03
+
+//response for unlock
+{"message":"Success","status":"SUCCESS","statusCode":200,"data":[{"instructionsName":"deviceUnlock","instructionsId":2}]}
+
+// response for lock
+{"message":"Success","status":"SUCCESS","statusCode":200,"data":[{"instructionsName":"deviceLock","instructionsId":3}]}
+
+// to send data
+http://evegah-admin.kritin.in/api/updateDeviceInformation?location=indore&latitude=27.2046° N&longitude=77.4977° E&altitude=7.099636689708742, 125.64062612332748&speed=65&battery=65&internal_batt_v=5000&external_batt_v=7500&deviceId=EDELTEMP03
+
+//delete device - DOES NOT WORK
+http://evegah-admin.kritin.in/api/deleteDevice?deviceId=EDELTEMP03
+
+
+
+http://evegah-admin.kritin.in/api/updateDeviceInformation?location=indore&latitude=27.2046° N&longitude=77.4977° E&altitude=3243ft&speed=12kmph&battery=65&internal_batt_v=5.000&external_batt_v=12.00&deviceId=EDELTEMP03
+
+http://evegah.kritin.in/api/updateDeviceInformation?location=indore&latitude=27.2046° N&longitude=77.4977° E&altitude=3243ft&speed=12kmph&battery=65&internal_batt_v=5.000&external_batt_v=12.00&deviceId=EDELTEMP03
+
+
+
+http://evegah-admin.kritin.in/api/deviceRegistration3?deviceId=EDELTEMP03&deviceName=test_90012345&registrationNumber=IND73467346&imeiNumber=878978979889&serialNumber=78786786786&odometer=77867&runTime=786786&chassisNumber=767787&dateoOfManufacture=07/08/2022&dateOfService=7878989
+
+
+http://evegah-admin.kritin.in/api/deviceRegistration3?deviceId=EDELTEMP03&deviceName=EDELTEMP05_TDX&registrationNumber=MP09PW1209&imeiNumber=0898980898&serialNumber =00099009091&odometer=77867&runTime=786786&chassisNumber=767787&dateOfManufacture=07/08/2022&dateOfService=07/08/2022
+
+http://evegah-admin.kritin.in/api/deviceRegistration3?deviceId=EDELTEMP03&imeiNumber=0898980898
+
+
+14/07/23
+API to register
+
+http://evegah-admin.kritin.in/api/dR?dId=EDELTEMP28&rN=MP09PW1209&imeiN=123456790&sN=00099009091&cN=767787&dOM=07/08/2022
+
+
+http://admin.evegah.com/api/dR?dId=EDELTEMP07&rN=MP09PW1209&imeiN=0123456781&sN=00099009091&cN=767787&dOM=07/08/2022
+
+/*************************************************************************************************************************************************/
+
+steps to inward
+inward lock  MATCH devid AND imei
+http://evegah-admin.kritin.in/api/dR?dId=EDELTEMP28&rN=MP09PW1209&imeiN=123456790&sN=00099009091&cN=767787&dOM=07/08/2022
+
+
+http://evegah-admin.kritin.in/api/uDIM?lat=27.2046&long=77.4977&dId=EDELTEMP28 - SEND CO-ORDINATES
+WEB APP UNLCOK
+GET INSTRUCTION
+http://evegah-admin.kritin.in/api/getDeviceInstructions?dId=EDELTEMP28
+
+UNLOCK AND SEND STATUS
+http://evegah-admin.kritin.in/api/unlockDevice?dId=EDELTEMP28&lockStatus=1
+
+*******************************
+production EDELTEMP05
+******************************
+INWARD LOCK
+
+http://adm.evegah.com/api/dR?dId=EDELTEMP05&rN=MP09PW1208&imeiN=123456789&sN=00099009090&cN=767786&dOM=07/08/2022
+
+http://admin.evegah.com/api/dR?dId=EDELTEMP06&imeiN=123456780
+
+
+http://admin.evegah.com/api/uDIM?lat=27.2046&long=77.4977&dId=EDELTEMP07
+
+http://admin.evegah.com/api/getDeviceInstructions?dId=EDELTEMP07
+
+http://admin.evegah.com/api/unlockDevice?dId=EDELTEMP07&lockStatus=1
