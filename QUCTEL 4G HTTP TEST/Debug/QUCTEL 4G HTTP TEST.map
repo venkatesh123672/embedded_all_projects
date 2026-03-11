@@ -1,0 +1,1917 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+                              ./User/pwm.o (__aeabi_uidiv)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+                              ./User/main.o (__aeabi_idiv)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subsf3.o)
+                              ./User/main.o (__aeabi_fsub)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(fixsfsi.o)
+                              ./User/main.o (__aeabi_f2iz)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsisf.o)
+                              ./User/main.o (__aeabi_i2f)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(muldf3.o)
+                              ./User/main.o (__aeabi_dmul)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsidf.o)
+                              ./User/main.o (__aeabi_i2d)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(extendsfdf2.o)
+                              ./User/main.o (__aeabi_f2d)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(truncdfsf2.o)
+                              ./User/main.o (__aeabi_d2f)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_clzsi2.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subsf3.o) (__clzsi2)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-errno.o)
+                              ./CMSIS/GCC/_syscalls.o (__errno)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-exit.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (exit)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-impure.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-init.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (__libc_init_array)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-itoa.o)
+                              ./User/main.o (itoa)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+                              ./User/config.o (memcpy)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memset.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (memset)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o)
+                              ./Library/retarget.o (printf)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o)
+                              ./Library/retarget.o (puts)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcat.o)
+                              ./User/main.o (strcat)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strchr.o)
+                              ./User/config.o (strchr)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcpy.o)
+                              ./User/config.o (strcpy)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strlen.o)
+                              ./User/config.o (strlen)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strncpy.o)
+                              ./User/config.o (strncpy)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strstr.o)
+                              ./User/config.o (strstr)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-utoa.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-itoa.o) (__utoa)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wbuf.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o) (__swbuf_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wsetup.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o) (__swsetup_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fflush.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wbuf.o) (_fflush_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o) (__sinit)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fwalk.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o) (_fwalk)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o) (__retarget_lock_init_recursive)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wsetup.o) (__smakebuf_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-freer.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wsetup.o) (_free_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o) (_malloc_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o) (_vfprintf_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o) (_printf_i)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-sbrkr.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o) (__sread)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-writer.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o) (_write_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-closer.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o) (_close_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fstatr.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o) (_fstat_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fvwrite.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o) (__sfvwrite_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-isattyr.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o) (_isatty_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lseekr.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o) (_lseek_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memchr-stub.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o) (memchr)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memmove.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fvwrite.o) (memmove)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-mlock.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-reallocr.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fvwrite.o) (_realloc_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-readr.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o) (_read_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-msizer.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o) (__gnu_thumb1_case_shi)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o)
+                              ./User/main.o (pow)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o) (__ieee754_pow)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_sqrt.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o) (__ieee754_sqrt)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o) (__math_uflow)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_fabs.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o) (fabs)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_finite.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o) (finite)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_scalbn.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o) (scalbn)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-sbrkr.o) (_sbrk)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(_exit.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-exit.o) (_exit)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_arm_cmpdf2.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o) (__aeabi_dcmpeq)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(adddf3.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o) (__aeabi_dadd)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(divdf3.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o) (__aeabi_ddiv)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(eqdf2.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_arm_cmpdf2.o) (__eqdf2)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(gedf2.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_arm_cmpdf2.o) (__gedf2)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(ledf2.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_arm_cmpdf2.o) (__ledf2)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subdf3.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o) (__aeabi_dsub)
+c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(unorddf2.o)
+                              c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o) (__aeabi_dcmpun)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x00000000        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .rodata        0x00000000       0x24 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .text          0x00000000        0x0 ./User/ADC.o
+ .data          0x00000000        0x0 ./User/ADC.o
+ .bss           0x00000000        0x0 ./User/ADC.o
+ .text.ADC_init
+                0x00000000       0x20 ./User/ADC.o
+ .text.ADC_measure
+                0x00000000       0x40 ./User/ADC.o
+ .text.readV_ReadOutputV
+                0x00000000       0x24 ./User/ADC.o
+ .text.readI_ReadOutputI
+                0x00000000       0x24 ./User/ADC.o
+ .bss.Res_Curr_Read
+                0x00000000        0x4 ./User/ADC.o
+ .bss.Res_Vtg_FB
+                0x00000000        0x4 ./User/ADC.o
+ .bss.Res_Vtg_Read
+                0x00000000        0x4 ./User/ADC.o
+ .bss.adcData   0x00000000       0x10 ./User/ADC.o
+ .bss.current_read
+                0x00000000        0x4 ./User/ADC.o
+ .bss.extBatt_V
+                0x00000000        0x4 ./User/ADC.o
+ .bss.intBatt_V
+                0x00000000        0x4 ./User/ADC.o
+ .bss.testStr   0x00000000       0x10 ./User/ADC.o
+ .bss.vtg_read  0x00000000        0x4 ./User/ADC.o
+ .text          0x00000000        0x0 ./User/config.o
+ .data          0x00000000        0x0 ./User/config.o
+ .bss           0x00000000        0x0 ./User/config.o
+ .text.fmc_write_test
+                0x00000000        0x4 ./User/config.o
+ .rodata.read_config_data.str1.4
+                0x00000000       0x18 ./User/config.o
+ .text.read_config_data
+                0x00000000       0xcc ./User/config.o
+ .rodata.configMode_app.str1.4
+                0x00000000       0xd9 ./User/config.o
+ .text.configMode_app
+                0x00000000      0x2d8 ./User/config.o
+ .text.parse_config_data
+                0x00000000      0x110 ./User/config.o
+ .bss.SW_variant
+                0x00000000       0x32 ./User/config.o
+ .bss.SW_ver    0x00000000       0x14 ./User/config.o
+ .bss.SlNo      0x00000000       0x14 ./User/config.o
+ .bss.bpoff     0x00000000       0x14 ./User/config.o
+ .bss.bpon      0x00000000       0x14 ./User/config.o
+ .bss.cmdLen    0x00000000        0x2 ./User/config.o
+ .bss.cmdReadBk
+                0x00000000      0x1f4 ./User/config.o
+ .bss.command   0x00000000      0x1f4 ./User/config.o
+ .bss.dataWr    0x00000000        0x1 ./User/config.o
+ .bss.dom       0x00000000       0x14 ./User/config.o
+ .bss.expDataIn
+                0x00000000        0x1 ./User/config.o
+ .bss.lockDelay
+                0x00000000       0x14 ./User/config.o
+ .bss.lockSteps
+                0x00000000       0x14 ./User/config.o
+ .bss.tVarEnd   0x00000000        0x4 ./User/config.o
+ .bss.tVarStart
+                0x00000000        0x4 ./User/config.o
+ .bss.tempAddr  0x00000000        0x4 ./User/config.o
+ .bss.testURL_2
+                0x00000000       0x32 ./User/config.o
+ .bss.u32Data   0x00000000        0x4 ./User/config.o
+ .bss.u32RData  0x00000000        0x4 ./User/config.o
+ .bss.unlockSteps
+                0x00000000       0x14 ./User/config.o
+ .bss.x         0x00000000        0x2 ./User/config.o
+ .data.configData
+                0x00000000      0x7ec ./User/config.o
+ .data.u32FlashStartAddr
+                0x00000000        0x4 ./User/config.o
+ .debug_info    0x00000000      0xfd6 ./User/config.o
+ .debug_abbrev  0x00000000      0x2a2 ./User/config.o
+ .debug_loc     0x00000000       0xe7 ./User/config.o
+ .debug_aranges
+                0x00000000       0x38 ./User/config.o
+ .debug_ranges  0x00000000       0x40 ./User/config.o
+ .debug_line    0x00000000      0x75d ./User/config.o
+ .debug_str     0x00000000      0x62e ./User/config.o
+ .comment       0x00000000       0x4a ./User/config.o
+ .debug_frame   0x00000000       0x78 ./User/config.o
+ .ARM.attributes
+                0x00000000       0x2c ./User/config.o
+ .text          0x00000000        0x0 ./User/gpio.o
+ .data          0x00000000        0x0 ./User/gpio.o
+ .bss           0x00000000        0x0 ./User/gpio.o
+ .text.GPIO_SetMode
+                0x00000000       0x2a ./User/gpio.o
+ .text.GPIO_EnableInt
+                0x00000000       0x1a ./User/gpio.o
+ .text.GPIO_DisableInt
+                0x00000000       0x1c ./User/gpio.o
+ .debug_info    0x00000000      0x21d ./User/gpio.o
+ .debug_abbrev  0x00000000       0xff ./User/gpio.o
+ .debug_loc     0x00000000       0x48 ./User/gpio.o
+ .debug_aranges
+                0x00000000       0x30 ./User/gpio.o
+ .debug_ranges  0x00000000       0x20 ./User/gpio.o
+ .debug_line    0x00000000      0x204 ./User/gpio.o
+ .debug_str     0x00000000      0x22d ./User/gpio.o
+ .comment       0x00000000       0x4a ./User/gpio.o
+ .debug_frame   0x00000000       0x54 ./User/gpio.o
+ .ARM.attributes
+                0x00000000       0x2c ./User/gpio.o
+ .text          0x00000000        0x0 ./User/main.o
+ .data          0x00000000        0x0 ./User/main.o
+ .bss           0x00000000        0x0 ./User/main.o
+ .text.UART0_Init
+                0x00000000       0x30 ./User/main.o
+ .rodata.GET_GNSS_data.str1.4
+                0x00000000        0xa ./User/main.o
+ .text.GET_GNSS_data
+                0x00000000      0x128 ./User/main.o
+ .rodata.WLT_SEND_DATA.str1.4
+                0x00000000       0x16 ./User/main.o
+ .text.WLT_SEND_DATA
+                0x00000000      0x1dc ./User/main.o
+ .text.reverse  0x00000000       0x1a ./User/main.o
+ .text.intToStr
+                0x00000000       0x50 ./User/main.o
+ .text.ftoa     0x00000000       0x74 ./User/main.o
+ .text.delay_loop
+                0x00000000       0x18 ./User/main.o
+ .bss.GNSS      0x00000000        0x1 ./User/main.o
+ .bss.GNSS_data
+                0x00000000       0x64 ./User/main.o
+ .bss.GPS_data  0x00000000        0x1 ./User/main.o
+ .bss.GSM_SM_T  0x00000000        0x1 ./User/main.o
+ .bss.UART0_TX_BUF
+                0x00000000       0xfa ./User/main.o
+ .bss.UART1_TX_BUF
+                0x00000000       0xfa ./User/main.o
+ .bss.UART2_TX_BUF
+                0x00000000       0xfa ./User/main.o
+ .bss.URL       0x00000000       0x96 ./User/main.o
+ .bss.devID     0x00000000       0x14 ./User/main.o
+ .bss.gnss      0x00000000       0x14 ./User/main.o
+ .bss.gnssalt   0x00000000        0x5 ./User/main.o
+ .bss.gnsscog   0x00000000        0x6 ./User/main.o
+ .bss.gnssdate  0x00000000        0x6 ./User/main.o
+ .bss.gnssday   0x00000000        0x3 ./User/main.o
+ .bss.gnssfix   0x00000000        0x1 ./User/main.o
+ .bss.gnsshdop  0x00000000        0x3 ./User/main.o
+ .bss.gnsslat   0x00000000        0x8 ./User/main.o
+ .bss.gnsslon   0x00000000        0x8 ./User/main.o
+ .bss.gnssmon   0x00000000        0x3 ./User/main.o
+ .bss.gnssnsat  0x00000000        0x2 ./User/main.o
+ .bss.gnssspkm  0x00000000        0x3 ./User/main.o
+ .bss.gnssspkn  0x00000000        0x3 ./User/main.o
+ .bss.gnssutc   0x00000000        0xa ./User/main.o
+ .bss.gnssutcmin
+                0x00000000        0x3 ./User/main.o
+ .bss.gnssutcsec
+                0x00000000        0x3 ./User/main.o
+ .bss.gnssutctime
+                0x00000000        0x3 ./User/main.o
+ .bss.gnssyear  0x00000000        0x3 ./User/main.o
+ .bss.newGpsData
+                0x00000000        0x1 ./User/main.o
+ .bss.noByt     0x00000000        0x1 ./User/main.o
+ .bss.readGNSS  0x00000000        0x1 ./User/main.o
+ .bss.rtc       0x00000000        0x4 ./User/main.o
+ .bss.urlsize   0x00000000        0x4 ./User/main.o
+ .bss.wlturlsize
+                0x00000000        0x5 ./User/main.o
+ .data.URLLENGTH
+                0x00000000       0x14 ./User/main.o
+ .data.WLTALTITUDE
+                0x00000000       0x14 ./User/main.o
+ .data.WLTEVENTID
+                0x00000000       0x14 ./User/main.o
+ .data.WLTGPSDATE
+                0x00000000       0x14 ./User/main.o
+ .data.WLTHEADING
+                0x00000000       0x14 ./User/main.o
+ .data.WLTIGNITION
+                0x00000000       0x14 ./User/main.o
+ .data.WLTIME   0x00000000       0x14 ./User/main.o
+ .data.WLTLAT   0x00000000       0x14 ./User/main.o
+ .data.WLTLON   0x00000000       0x14 ./User/main.o
+ .data.WLTODOMETER
+                0x00000000       0x14 ./User/main.o
+ .data.WLTSPEED
+                0x00000000       0x14 ./User/main.o
+ .data.delayCounter
+                0x00000000        0x4 ./User/main.o
+ .text          0x00000000        0x0 ./User/pwm.o
+ .data          0x00000000        0x0 ./User/pwm.o
+ .bss           0x00000000        0x0 ./User/pwm.o
+ .text.PWM_ConfigCaptureChannel
+                0x00000000      0x134 ./User/pwm.o
+ .text.PWM_ConfigOutputChannel
+                0x00000000      0x154 ./User/pwm.o
+ .text.PWM_Start
+                0x00000000        0x8 ./User/pwm.o
+ .text.PWM_Stop
+                0x00000000       0x22 ./User/pwm.o
+ .text.PWM_ForceStop
+                0x00000000        0x8 ./User/pwm.o
+ .text.PWM_EnableADCTrigger
+                0x00000000       0x40 ./User/pwm.o
+ .text.PWM_DisableADCTrigger
+                0x00000000       0x28 ./User/pwm.o
+ .text.PWM_ClearADCTriggerFlag
+                0x00000000        0xe ./User/pwm.o
+ .text.PWM_GetADCTriggerFlag
+                0x00000000       0x14 ./User/pwm.o
+ .text.PWM_EnableFaultBrake
+                0x00000000      0x11c ./User/pwm.o
+ .text.PWM_EnableCapture
+                0x00000000       0x14 ./User/pwm.o
+ .text.PWM_DisableCapture
+                0x00000000       0x14 ./User/pwm.o
+ .text.PWM_EnableOutput
+                0x00000000        0xa ./User/pwm.o
+ .text.PWM_DisableOutput
+                0x00000000        0xa ./User/pwm.o
+ .text.PWM_EnablePDMA
+                0x00000000       0x30 ./User/pwm.o
+ .text.PWM_DisablePDMA
+                0x00000000       0x16 ./User/pwm.o
+ .text.PWM_EnableDeadZone
+                0x00000000       0x1e ./User/pwm.o
+ .text.PWM_DisableDeadZone
+                0x00000000       0x18 ./User/pwm.o
+ .text.PWM_EnableCaptureInt
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_DisableCaptureInt
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_ClearCaptureIntFlag
+                0x00000000        0xa ./User/pwm.o
+ .text.PWM_GetCaptureIntFlag
+                0x00000000       0x26 ./User/pwm.o
+ .text.PWM_EnableDutyInt
+                0x00000000        0xe ./User/pwm.o
+ .text.PWM_DisableDutyInt
+                0x00000000       0x14 ./User/pwm.o
+ .text.PWM_ClearDutyIntFlag
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_GetDutyIntFlag
+                0x00000000       0x14 ./User/pwm.o
+ .text.PWM_EnableFaultBrakeInt
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_DisableFaultBrakeInt
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_ClearFaultBrakeIntFlag
+                0x00000000        0xa ./User/pwm.o
+ .text.PWM_GetFaultBrakeIntFlag
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_EnablePeriodInt
+                0x00000000       0x12 ./User/pwm.o
+ .text.PWM_DisablePeriodInt
+                0x00000000       0x12 ./User/pwm.o
+ .text.PWM_ClearPeriodIntFlag
+                0x00000000        0xc ./User/pwm.o
+ .text.PWM_GetPeriodIntFlag
+                0x00000000       0x12 ./User/pwm.o
+ .text.PWM_EnableZeroInt
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_DisableZeroInt
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_ClearZeroIntFlag
+                0x00000000        0xa ./User/pwm.o
+ .text.PWM_GetZeroIntFlag
+                0x00000000        0xc ./User/pwm.o
+ .text.PWM_EnableAcc
+                0x00000000       0x20 ./User/pwm.o
+ .text.PWM_DisableAcc
+                0x00000000       0x14 ./User/pwm.o
+ .text.PWM_EnableAccInt
+                0x00000000       0x14 ./User/pwm.o
+ .text.PWM_DisableAccInt
+                0x00000000       0x14 ./User/pwm.o
+ .text.PWM_ClearAccInt
+                0x00000000        0xe ./User/pwm.o
+ .text.PWM_GetAccInt
+                0x00000000       0x14 ./User/pwm.o
+ .text.PWM_ClearFTDutyIntFlag
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_GetFTDutyIntFlag
+                0x00000000       0x16 ./User/pwm.o
+ .text.PWM_EnableLoadMode
+                0x00000000        0xa ./User/pwm.o
+ .text.PWM_DisableLoadMode
+                0x00000000        0xa ./User/pwm.o
+ .text.PWM_ConfigSyncPhase
+                0x00000000       0x36 ./User/pwm.o
+ .text.PWM_EnableSyncPhase
+                0x00000000       0x24 ./User/pwm.o
+ .text.PWM_DisableSyncPhase
+                0x00000000       0x24 ./User/pwm.o
+ .text.PWM_EnableSyncNoiseFilter
+                0x00000000       0x20 ./User/pwm.o
+ .text.PWM_DisableSyncNoiseFilter
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_EnableSyncPinInverse
+                0x00000000        0xc ./User/pwm.o
+ .text.PWM_DisableSyncPinInverse
+                0x00000000       0x10 ./User/pwm.o
+ .text.PWM_SetClockSource
+                0x00000000       0x16 ./User/pwm.o
+ .text.PWM_EnableBrakeNoiseFilter
+                0x00000000       0x20 ./User/pwm.o
+ .text.PWM_DisableBrakeNoiseFilter
+                0x00000000       0x12 ./User/pwm.o
+ .text.PWM_EnableBrakePinInverse
+                0x00000000       0x12 ./User/pwm.o
+ .text.PWM_DisableBrakePinInverse
+                0x00000000       0x12 ./User/pwm.o
+ .text.PWM_SetBrakePinSource
+                0x00000000       0x1a ./User/pwm.o
+ .text.PWM_SetLeadingEdgeBlanking
+                0x00000000       0x16 ./User/pwm.o
+ .text.PWM_GetWrapAroundFlag
+                0x00000000        0xe ./User/pwm.o
+ .text.PWM_ClearWrapAroundFlag
+                0x00000000        0xc ./User/pwm.o
+ .debug_info    0x00000000     0x1be7 ./User/pwm.o
+ .debug_abbrev  0x00000000      0x2bf ./User/pwm.o
+ .debug_loc     0x00000000     0x1108 ./User/pwm.o
+ .debug_aranges
+                0x00000000      0x218 ./User/pwm.o
+ .debug_ranges  0x00000000      0x238 ./User/pwm.o
+ .debug_line    0x00000000      0xfef ./User/pwm.o
+ .debug_str     0x00000000      0xc7c ./User/pwm.o
+ .comment       0x00000000       0x4a ./User/pwm.o
+ .debug_frame   0x00000000      0x568 ./User/pwm.o
+ .ARM.attributes
+                0x00000000       0x2c ./User/pwm.o
+ .text          0x00000000        0x0 ./User/timer.o
+ .data          0x00000000        0x0 ./User/timer.o
+ .bss           0x00000000        0x0 ./User/timer.o
+ .text.TIMER_Close
+                0x00000000        0x8 ./User/timer.o
+ .text.TIMER_EnableCapture
+                0x00000000       0x18 ./User/timer.o
+ .text.TIMER_DisableCapture
+                0x00000000        0xa ./User/timer.o
+ .text.TIMER_EnableEventCounter
+                0x00000000       0x16 ./User/timer.o
+ .text.TIMER_DisableEventCounter
+                0x00000000       0x10 ./User/timer.o
+ .text.TIMER_Delay
+                0x00000000       0xac ./User/timer.o
+ .text.TIMER_EnableFreqCounter
+                0x00000000       0x34 ./User/timer.o
+ .text.TIMER_DisableFreqCounter
+                0x00000000       0x10 ./User/timer.o
+ .text.TIMER_SetTriggerSource
+                0x00000000        0xc ./User/timer.o
+ .text.TIMER_SetTriggerTarget
+                0x00000000        0xc ./User/timer.o
+ .text          0x00000000        0x0 ./Library/clk.o
+ .data          0x00000000        0x0 ./Library/clk.o
+ .bss           0x00000000        0x0 ./Library/clk.o
+ .text.CLK_DisableCKO
+                0x00000000       0x10 ./Library/clk.o
+ .text.CLK_EnableCKO
+                0x00000000       0x24 ./Library/clk.o
+ .text.CLK_PowerDown
+                0x00000000       0x20 ./Library/clk.o
+ .text.CLK_Idle
+                0x00000000       0x20 ./Library/clk.o
+ .text.CLK_GetHXTFreq
+                0x00000000       0x1c ./Library/clk.o
+ .text.CLK_GetLXTFreq
+                0x00000000       0x1c ./Library/clk.o
+ .text.CLK_GetHCLKFreq
+                0x00000000       0x10 ./Library/clk.o
+ .text.CLK_GetPCLK0Freq
+                0x00000000       0x24 ./Library/clk.o
+ .text.CLK_GetPCLK1Freq
+                0x00000000       0x24 ./Library/clk.o
+ .text.CLK_GetCPUFreq
+                0x00000000       0x10 ./Library/clk.o
+ .text.CLK_SetSysTickClockSrc
+                0x00000000       0x14 ./Library/clk.o
+ .text.CLK_EnableXtalRC
+                0x00000000       0x10 ./Library/clk.o
+ .text.CLK_DisableXtalRC
+                0x00000000       0x10 ./Library/clk.o
+ .text.CLK_DisableModuleClock
+                0x00000000       0x38 ./Library/clk.o
+ .text.CLK_DisablePLL
+                0x00000000       0x14 ./Library/clk.o
+ .text.CLK_WaitClockReady
+                0x00000000       0x28 ./Library/clk.o
+ .text.CLK_SetHCLK
+                0x00000000       0x4c ./Library/clk.o
+ .text.CLK_EnablePLL
+                0x00000000      0x1bc ./Library/clk.o
+ .text.CLK_SetCoreClock
+                0x00000000       0x90 ./Library/clk.o
+ .text.CLK_EnableSysTick
+                0x00000000       0x3c ./Library/clk.o
+ .text.CLK_DisableSysTick
+                0x00000000        0xc ./Library/clk.o
+ .text          0x00000000        0x0 ./Library/retarget.o
+ .data          0x00000000        0x0 ./Library/retarget.o
+ .bss           0x00000000        0x0 ./Library/retarget.o
+ .text.SendChar_ToUART
+                0x00000000       0x28 ./Library/retarget.o
+ .text.SendChar
+                0x00000000        0x8 ./Library/retarget.o
+ .text.GetChar  0x00000000       0x14 ./Library/retarget.o
+ .text.kbhit    0x00000000       0x14 ./Library/retarget.o
+ .text.IsDebugFifoEmpty
+                0x00000000       0x14 ./Library/retarget.o
+ .text._ttywrch
+                0x00000000        0x8 ./Library/retarget.o
+ .text.fputc    0x00000000        0xc ./Library/retarget.o
+ .bss.__stdin   0x00000000       0x68 ./Library/retarget.o
+ .bss.__stdout  0x00000000       0x68 ./Library/retarget.o
+ .text          0x00000000        0x0 ./Library/sys.o
+ .data          0x00000000        0x0 ./Library/sys.o
+ .bss           0x00000000        0x0 ./Library/sys.o
+ .text.SYS_ClearResetSrc
+                0x00000000        0x8 ./Library/sys.o
+ .text.SYS_GetBODStatus
+                0x00000000        0xe ./Library/sys.o
+ .text.SYS_GetResetSrc
+                0x00000000        0x8 ./Library/sys.o
+ .text.SYS_IsRegLocked
+                0x00000000       0x14 ./Library/sys.o
+ .text.SYS_ReadPDID
+                0x00000000        0x8 ./Library/sys.o
+ .text.SYS_ResetChip
+                0x00000000        0xe ./Library/sys.o
+ .text.SYS_ResetCPU
+                0x00000000        0xe ./Library/sys.o
+ .text.SYS_ResetModule
+                0x00000000       0x24 ./Library/sys.o
+ .text.SYS_EnableBOD
+                0x00000000       0x24 ./Library/sys.o
+ .text.SYS_DisableBOD
+                0x00000000        0xe ./Library/sys.o
+ .debug_info    0x00000000      0x494 ./Library/sys.o
+ .debug_abbrev  0x00000000      0x12a ./Library/sys.o
+ .debug_loc     0x00000000       0x4a ./Library/sys.o
+ .debug_aranges
+                0x00000000       0x68 ./Library/sys.o
+ .debug_ranges  0x00000000       0x58 ./Library/sys.o
+ .debug_line    0x00000000      0x28a ./Library/sys.o
+ .debug_str     0x00000000      0x3a9 ./Library/sys.o
+ .comment       0x00000000       0x4a ./Library/sys.o
+ .debug_frame   0x00000000       0xb8 ./Library/sys.o
+ .ARM.attributes
+                0x00000000       0x2c ./Library/sys.o
+ .text          0x00000000        0x0 ./Library/uart.o
+ .data          0x00000000        0x0 ./Library/uart.o
+ .bss           0x00000000        0x0 ./Library/uart.o
+ .text.UART_ClearIntFlag
+                0x00000000       0x38 ./Library/uart.o
+ .text.UART_Close
+                0x00000000        0x6 ./Library/uart.o
+ .text.UART_DisableFlowCtrl
+                0x00000000       0x10 ./Library/uart.o
+ .text.UART_DisableInt
+                0x00000000       0x44 ./Library/uart.o
+ .text.UART_EnableFlowCtrl
+                0x00000000       0x20 ./Library/uart.o
+ .text.UART_Open
+                0x00000000       0xe8 ./Library/uart.o
+ .text.UART_SetLine_Config
+                0x00000000       0xf8 ./Library/uart.o
+ .text.UART_SetTimeoutCnt
+                0x00000000       0x16 ./Library/uart.o
+ .text.UART_SelectIrDAMode
+                0x00000000       0xf4 ./Library/uart.o
+ .text.UART_SelectRS485Mode
+                0x00000000       0x20 ./Library/uart.o
+ .text.UART_SelectLINMode
+                0x00000000       0x18 ./Library/uart.o
+ .rodata        0x00000000       0x10 ./Library/uart.o
+ .text          0x00000000        0x0 ./CMSIS/GCC/_syscalls.o
+ .data          0x00000000        0x0 ./CMSIS/GCC/_syscalls.o
+ .bss           0x00000000        0x0 ./CMSIS/GCC/_syscalls.o
+ .text.__initialize_args
+                0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text.raise    0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text.kill     0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._chown   0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._execve  0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._fork    0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._getpid  0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._gettimeofday
+                0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._kill    0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._link    0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._open    0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._read    0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._readlink
+                0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._stat    0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._symlink
+                0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._times   0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._unlink  0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._wait    0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .text._write   0x00000000       0x10 ./CMSIS/GCC/_syscalls.o
+ .bss.__dso_handle
+                0x00000000        0x4 ./CMSIS/GCC/_syscalls.o
+ .bss.__env     0x00000000        0x4 ./CMSIS/GCC/_syscalls.o
+ .bss.name.0    0x00000000        0x1 ./CMSIS/GCC/_syscalls.o
+ .data.argv.1   0x00000000        0x8 ./CMSIS/GCC/_syscalls.o
+ .data.environ  0x00000000        0x4 ./CMSIS/GCC/_syscalls.o
+ .data          0x00000000        0x0 ./CMSIS/GCC/startup_M0564.o
+ .bss           0x00000000        0x0 ./CMSIS/GCC/startup_M0564.o
+ .text          0x00000000        0x0 ./CMSIS/system_M0564.o
+ .data          0x00000000        0x0 ./CMSIS/system_M0564.o
+ .bss           0x00000000        0x0 ./CMSIS/system_M0564.o
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+ .text          0x00000000      0x1d4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+ .debug_frame   0x00000000       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000000       0x1e c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000      0x35c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subsf3.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subsf3.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subsf3.o)
+ .debug_frame   0x00000000       0x38 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subsf3.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subsf3.o)
+ .text          0x00000000       0x40 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(fixsfsi.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(fixsfsi.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(fixsfsi.o)
+ .debug_frame   0x00000000       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(fixsfsi.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(fixsfsi.o)
+ .text          0x00000000       0x9c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsisf.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsisf.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsisf.o)
+ .debug_frame   0x00000000       0x30 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsisf.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsisf.o)
+ .text          0x00000000      0x4d8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(muldf3.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(muldf3.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(muldf3.o)
+ .rodata        0x00000000       0x40 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(muldf3.o)
+ .debug_frame   0x00000000       0x3c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(muldf3.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(muldf3.o)
+ .text          0x00000000       0x60 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsidf.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsidf.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsidf.o)
+ .debug_frame   0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsidf.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(floatsidf.o)
+ .text          0x00000000       0x90 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(extendsfdf2.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(extendsfdf2.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(extendsfdf2.o)
+ .debug_frame   0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(extendsfdf2.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(extendsfdf2.o)
+ .text          0x00000000      0x110 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(truncdfsf2.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(truncdfsf2.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(truncdfsf2.o)
+ .debug_frame   0x00000000       0x30 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(truncdfsf2.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(truncdfsf2.o)
+ .text          0x00000000       0x3c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_clzsi2.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_clzsi2.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x00000000       0x1e c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_clzsi2.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-itoa.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-itoa.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-itoa.o)
+ .text.__itoa   0x00000000       0x30 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-itoa.o)
+ .text.itoa     0x00000000        0x8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-itoa.o)
+ .debug_frame   0x00000000       0x40 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-itoa.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-itoa.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o)
+ .text._printf_r
+                0x00000000       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcat.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcat.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcat.o)
+ .text.strcat   0x00000000       0x1a c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcat.o)
+ .debug_frame   0x00000000       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcat.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcat.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strchr.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strchr.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strchr.o)
+ .text.strchr   0x00000000       0x1c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strchr.o)
+ .debug_frame   0x00000000       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strchr.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strchr.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcpy.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcpy.o)
+ .text.strcpy   0x00000000       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcpy.o)
+ .debug_frame   0x00000000       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strlen.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strncpy.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strncpy.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strncpy.o)
+ .text.strncpy  0x00000000       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strncpy.o)
+ .debug_frame   0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strncpy.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strncpy.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strstr.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strstr.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strstr.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-utoa.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-utoa.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-utoa.o)
+ .rodata.__utoa.str1.1
+                0x00000000       0x25 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-utoa.o)
+ .text.__utoa   0x00000000       0x6c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-utoa.o)
+ .text.utoa     0x00000000        0x8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-utoa.o)
+ .debug_frame   0x00000000       0x48 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-utoa.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-utoa.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wbuf.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wbuf.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wbuf.o)
+ .text.__swbuf  0x00000000       0x14 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wbuf.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wsetup.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wsetup.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wsetup.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fflush.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fflush.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fflush.o)
+ .text.fflush   0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fflush.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .text.__fp_lock
+                0x00000000       0x18 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .text.__fp_unlock
+                0x00000000       0x18 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .text._cleanup
+                0x00000000       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .text.__fp_lock_all
+                0x00000000       0x1c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .text.__fp_unlock_all
+                0x00000000       0x1c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fwalk.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fwalk.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fwalk.o)
+ .text._fwalk   0x00000000       0x36 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fwalk.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_init
+                0x00000000        0x2 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_close
+                0x00000000        0x2 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x00000000        0x2 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x00000000        0x2 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x00000000        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x00000000        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_release
+                0x00000000        0x2 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .bss.__lock___arc4random_mutex
+                0x00000000        0x1 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .bss.__lock___at_quick_exit_mutex
+                0x00000000        0x1 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .bss.__lock___atexit_recursive_mutex
+                0x00000000        0x1 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .bss.__lock___dd_hash_mutex
+                0x00000000        0x1 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .bss.__lock___env_recursive_mutex
+                0x00000000        0x1 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .bss.__lock___tz_mutex
+                0x00000000        0x1 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-freer.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-freer.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-freer.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+ .text.__sprint_r
+                0x00000000       0x1c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+ .text.vfprintf
+                0x00000000       0x18 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-sbrkr.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+ .text.__seofread
+                0x00000000        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-writer.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-writer.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-writer.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-closer.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-closer.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-closer.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fstatr.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fstatr.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fstatr.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fvwrite.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fvwrite.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fvwrite.o)
+ .text.__sfvwrite_r
+                0x00000000      0x2d0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fvwrite.o)
+ .debug_frame   0x00000000       0x30 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fvwrite.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fvwrite.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-isattyr.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-isattyr.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-isattyr.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lseekr.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lseekr.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lseekr.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memchr-stub.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memchr-stub.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memchr-stub.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memmove.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memmove.o)
+ .text.memmove  0x00000000       0x26 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x00000000       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memmove.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-mlock.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-mlock.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-mlock.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-reallocr.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-reallocr.o)
+ .text._realloc_r
+                0x00000000       0x5e c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00000000       0x34 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-reallocr.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-reallocr.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-readr.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-readr.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-readr.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-msizer.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-msizer.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-msizer.o)
+ .text._malloc_usable_size_r
+                0x00000000       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00000000       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-msizer.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-msizer.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .rodata        0x00000000       0x24 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o)
+ .text.pow      0x00000000       0xe8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o)
+ .debug_frame   0x00000000       0x30 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-w_pow.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o)
+ .text.__ieee754_pow
+                0x00000000      0xb1c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o)
+ .debug_frame   0x00000000       0x3c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_pow.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_sqrt.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_sqrt.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_sqrt.o)
+ .text.__ieee754_sqrt
+                0x00000000      0x1b0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_sqrt.o)
+ .debug_frame   0x00000000       0x38 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_sqrt.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-e_sqrt.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text.with_errno
+                0x00000000       0x14 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text.xflow    0x00000000       0x30 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text.__math_uflow
+                0x00000000       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text.__math_may_uflow
+                0x00000000       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text.__math_oflow
+                0x00000000       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text.__math_divzero
+                0x00000000       0x34 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text.__math_invalid
+                0x00000000       0x40 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text.__math_check_uflow
+                0x00000000       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text.__math_check_oflow
+                0x00000000       0x48 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .debug_frame   0x00000000      0x104 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-math_err.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_fabs.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_fabs.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_fabs.o)
+ .text.fabs     0x00000000        0x8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_fabs.o)
+ .debug_frame   0x00000000       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_fabs.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_fabs.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_finite.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_finite.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_finite.o)
+ .text.finite   0x00000000       0x14 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_finite.o)
+ .debug_frame   0x00000000       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_finite.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_finite.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_scalbn.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_scalbn.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_scalbn.o)
+ .text.scalbn   0x00000000       0xf8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_scalbn.o)
+ .debug_frame   0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_scalbn.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a(lib_a-s_scalbn.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
+ .text          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(_exit.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(_exit.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(_exit.o)
+ .text          0x00000000       0x7c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x00000000       0x1e c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .text          0x00000000      0x678 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(adddf3.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(adddf3.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(adddf3.o)
+ .debug_frame   0x00000000       0x38 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(adddf3.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(adddf3.o)
+ .text          0x00000000      0x5ec c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(divdf3.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(divdf3.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(divdf3.o)
+ .rodata        0x00000000       0x40 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(divdf3.o)
+ .debug_frame   0x00000000       0x3c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(divdf3.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(divdf3.o)
+ .text          0x00000000       0x84 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(eqdf2.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(eqdf2.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(eqdf2.o)
+ .debug_frame   0x00000000       0x38 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(eqdf2.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(eqdf2.o)
+ .text          0x00000000       0xcc c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(gedf2.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(gedf2.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(gedf2.o)
+ .debug_frame   0x00000000       0x34 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(gedf2.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(gedf2.o)
+ .text          0x00000000       0xc8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(ledf2.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(ledf2.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(ledf2.o)
+ .debug_frame   0x00000000       0x34 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(ledf2.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(ledf2.o)
+ .text          0x00000000      0x724 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subdf3.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subdf3.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subdf3.o)
+ .debug_frame   0x00000000       0x3c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subdf3.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(subdf3.o)
+ .text          0x00000000       0x3c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(unorddf2.o)
+ .data          0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(unorddf2.o)
+ .bss           0x00000000        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(unorddf2.o)
+ .debug_frame   0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(unorddf2.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(unorddf2.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00000000         0x00040000         xr
+RAM              0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+LOAD ./User/ADC.o
+LOAD ./User/config.o
+LOAD ./User/gpio.o
+LOAD ./User/main.o
+LOAD ./User/pwm.o
+LOAD ./User/timer.o
+LOAD ./Library/clk.o
+LOAD ./Library/retarget.o
+LOAD ./Library/sys.o
+LOAD ./Library/uart.o
+LOAD ./CMSIS/GCC/_syscalls.o
+LOAD ./CMSIS/GCC/startup_M0564.o
+LOAD ./CMSIS/system_M0564.o
+START GROUP
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc_nano.a
+END GROUP
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+START GROUP
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
+LOAD c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a
+END GROUP
+
+.text           0x00000000     0x26e4
+ *(.vectors)
+ .vectors       0x00000000       0xbc ./CMSIS/GCC/startup_M0564.o
+                0x00000000                __Vectors
+                0x000000bc                __Vectors_End = .
+                0x000000bc                __Vectors_Size = (__Vectors_End - __Vectors)
+                0x20000540                __end__ = .
+ *(.text*)
+ .text          0x000000bc       0x48 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x00000104       0x80 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+                0x00000104                _stack_init
+                0x00000110                _start
+                0x00000110                _mainCRTStartup
+ .text.ADC_IRQHandler
+                0x00000184       0x18 ./User/ADC.o
+                0x00000184                ADC_IRQHandler
+ .text.TMR0_IRQHandler
+                0x0000019c       0x34 ./User/main.o
+                0x0000019c                TMR0_IRQHandler
+ .text.UART1_Init
+                0x000001d0       0x30 ./User/main.o
+                0x000001d0                UART1_Init
+ .text.UART2_Init
+                0x00000200       0x30 ./User/main.o
+                0x00000200                UART2_Init
+ .text.SYS_Init
+                0x00000230       0xa0 ./User/main.o
+                0x00000230                SYS_Init
+ .text.gsm_init
+                0x000002d0       0x80 ./User/main.o
+                0x000002d0                gsm_init
+ .text.gsm_datacall
+                0x00000350       0xa0 ./User/main.o
+                0x00000350                gsm_datacall
+ .text.loop_delay
+                0x000003f0       0x20 ./User/main.o
+                0x000003f0                loop_delay
+ .text.gsm_get_snapshot
+                0x00000410      0x160 ./User/main.o
+                0x00000410                gsm_get_snapshot
+ .text.gsm_connect
+                0x00000570      0x1ec ./User/main.o
+                0x00000570                gsm_connect
+ .text.gnss_query
+                0x0000075c       0x68 ./User/main.o
+                0x0000075c                gnss_query
+ .text.UART_Write_main
+                0x000007c4       0x18 ./User/main.o
+                0x000007c4                UART_Write_main
+ .text.UART2_TEST_HANDLE
+                0x000007dc       0xe0 ./User/main.o
+                0x000007dc                UART2_TEST_HANDLE
+ .text.UART02_IRQHandler
+                0x000008bc        0x8 ./User/main.o
+                0x000008bc                UART02_IRQHandler
+ .text.UART1_TEST_HANDLE
+                0x000008c4       0xe4 ./User/main.o
+                0x000008c4                UART1_TEST_HANDLE
+ .text.UART1_IRQHandler
+                0x000009a8       0x24 ./User/main.o
+                0x000009a8                UART1_IRQHandler
+ .text.gsm_idle
+                0x000009cc       0x5c ./User/main.o
+                0x000009cc                gsm_idle
+ .text.main     0x00000a28      0x100 ./User/main.o
+                0x00000a28                main
+ .text.TIMER_GetModuleClock
+                0x00000b28       0x84 ./User/timer.o
+                0x00000b28                TIMER_GetModuleClock
+ .text.TIMER_Open
+                0x00000bac       0x3c ./User/timer.o
+                0x00000bac                TIMER_Open
+ .text.CLK_SetModuleClock
+                0x00000be8       0x84 ./Library/clk.o
+                0x00000be8                CLK_SetModuleClock
+ .text.CLK_EnableModuleClock
+                0x00000c6c       0x38 ./Library/clk.o
+                0x00000c6c                CLK_EnableModuleClock
+ .text.stackDump
+                0x00000ca4       0x68 ./Library/retarget.o
+ .text.Hard_Fault_Handler
+                0x00000d0c       0x18 ./Library/retarget.o
+                0x00000d0c                Hard_Fault_Handler
+ .text.HardFault_Handler
+                0x00000d24       0x20 ./Library/retarget.o
+                0x00000d24                HardFault_Handler
+ .text._write   0x00000d44       0x40 ./Library/retarget.o
+                0x00000d44                _write
+ .text._read    0x00000d84       0x18 ./Library/retarget.o
+                0x00000d84                _read
+ .text.UART_EnableInt
+                0x00000d9c       0x3c ./Library/uart.o
+                0x00000d9c                UART_EnableInt
+ .text.UART_Read
+                0x00000dd8       0x2c ./Library/uart.o
+                0x00000dd8                UART_Read
+ .text.UART_Write
+                0x00000e04       0x36 ./Library/uart.o
+                0x00000e04                UART_Write
+ .text._close   0x00000e3a       0x10 ./CMSIS/GCC/_syscalls.o
+                0x00000e3a                _close
+ .text._fstat   0x00000e4a       0x10 ./CMSIS/GCC/_syscalls.o
+                0x00000e4a                _fstat
+ .text._isatty  0x00000e5a        0xe ./CMSIS/GCC/_syscalls.o
+                0x00000e5a                _isatty
+ .text._lseek   0x00000e68       0x10 ./CMSIS/GCC/_syscalls.o
+                0x00000e68                _lseek
+ .text          0x00000e78       0x34 ./CMSIS/GCC/startup_M0564.o
+                0x00000e78                Reset_Handler
+                0x00000ea0                I2C0_IRQHandler
+                0x00000ea0                SysTick_Handler
+                0x00000ea0                PWM1_IRQHandler
+                0x00000ea0                PendSV_Handler
+                0x00000ea0                NMI_Handler
+                0x00000ea0                I2C1_IRQHandler
+                0x00000ea0                EINT135_IRQHandler
+                0x00000ea0                SPI1_IRQHandler
+                0x00000ea0                EINT024_IRQHandler
+                0x00000ea0                RTC_IRQHandler
+                0x00000ea0                PWRWU_IRQHandler
+                0x00000ea0                ACMP01_IRQHandler
+                0x00000ea0                SC01_IRQHandler
+                0x00000ea0                Default_Handler
+                0x00000ea0                TMR2_IRQHandler
+                0x00000ea0                USCI_IRQHandler
+                0x00000ea0                BOD_IRQHandler
+                0x00000ea0                WDT_IRQHandler
+                0x00000ea0                SVC_Handler
+                0x00000ea0                PDMA_IRQHandler
+                0x00000ea0                GPAB_IRQHandler
+                0x00000ea0                PWM0_IRQHandler
+                0x00000ea0                TMR3_IRQHandler
+                0x00000ea0                GPCDEF_IRQHandler
+                0x00000ea0                SPI0_IRQHandler
+                0x00000ea0                TMR1_IRQHandler
+                0x00000ea0                CLKDIRC_IRQHandler
+ .text.SystemCoreClockUpdate
+                0x00000eac       0xac ./CMSIS/system_M0564.o
+                0x00000eac                SystemCoreClockUpdate
+ .text.SystemInit
+                0x00000f58        0x2 ./CMSIS/system_M0564.o
+                0x00000f58                SystemInit
+ *fill*         0x00000f5a        0x2 
+ .text          0x00000f5c      0x114 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+                0x00000f5c                __aeabi_uidiv
+                0x00000f5c                __udivsi3
+                0x00001068                __aeabi_uidivmod
+ .text          0x00001070        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+                0x00001070                __aeabi_idiv0
+                0x00001070                __aeabi_ldiv0
+ .text.__errno  0x00001074        0xc c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-errno.o)
+                0x00001074                __errno
+ .text.exit     0x00001080       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-exit.o)
+                0x00001080                exit
+ .text.__libc_init_array
+                0x000010ac       0x48 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-init.o)
+                0x000010ac                __libc_init_array
+ .text.memcpy   0x000010f4       0x12 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+                0x000010f4                memcpy
+ .text.memset   0x00001106       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memset.o)
+                0x00001106                memset
+ *fill*         0x00001116        0x2 
+ .text.printf   0x00001118       0x34 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o)
+                0x00001118                iprintf
+                0x00001118                printf
+ .text._puts_r  0x0000114c       0xe4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o)
+                0x0000114c                _puts_r
+ .text.puts     0x00001230       0x14 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o)
+                0x00001230                puts
+ .text          0x00001244        0xe c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strlen.o)
+                0x00001244                strlen
+ .text.strstr   0x00001252       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strstr.o)
+                0x00001252                strstr
+ *fill*         0x0000127e        0x2 
+ .text.__swbuf_r
+                0x00001280       0xac c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wbuf.o)
+                0x00001280                __swbuf_r
+ .text.__swsetup_r
+                0x0000132c       0xf0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wsetup.o)
+                0x0000132c                __swsetup_r
+ .text.__sflush_r
+                0x0000141c      0x118 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fflush.o)
+                0x0000141c                __sflush_r
+ .text._fflush_r
+                0x00001534       0x80 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fflush.o)
+                0x00001534                _fflush_r
+ .text.std      0x000015b4       0x48 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .text._cleanup_r
+                0x000015fc       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x000015fc                _cleanup_r
+ .text.__sfmoreglue
+                0x0000160c       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x0000160c                __sfmoreglue
+ .text.__sfp_lock_acquire
+                0x00001638       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x00001638                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x00001648       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x00001648                __sfp_lock_release
+ .text.__sinit_lock_acquire
+                0x00001658       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x00001658                __sinit_lock_acquire
+ .text.__sinit_lock_release
+                0x00001668       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x00001668                __sinit_lock_release
+ .text.__sinit  0x00001678       0x70 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x00001678                __sinit
+ .text.__sfp    0x000016e8       0x90 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x000016e8                __sfp
+ .text._fwalk_reent
+                0x00001778       0x40 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fwalk.o)
+                0x00001778                _fwalk_reent
+ .text.__retarget_lock_init_recursive
+                0x000017b8        0x2 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+                0x000017b8                __retarget_lock_init_recursive
+ .text.__retarget_lock_acquire_recursive
+                0x000017ba        0x2 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+                0x000017ba                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_release_recursive
+                0x000017bc        0x2 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+                0x000017bc                __retarget_lock_release_recursive
+ *fill*         0x000017be        0x2 
+ .text.__swhatbuf_r
+                0x000017c0       0x50 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o)
+                0x000017c0                __swhatbuf_r
+ .text.__smakebuf_r
+                0x00001810       0x88 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o)
+                0x00001810                __smakebuf_r
+ .text._free_r  0x00001898       0x94 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-freer.o)
+                0x00001898                _free_r
+ .text.sbrk_aligned
+                0x0000192c       0x44 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x00001970       0xec c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x00001970                _malloc_r
+ .text.__sfputc_r
+                0x00001a5c       0x2a c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+ .text.__sfputs_r
+                0x00001a86       0x24 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x00001a86                __sfputs_r
+ *fill*         0x00001aaa        0x2 
+ .text._vfprintf_r
+                0x00001aac      0x274 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x00001aac                _vfprintf_r
+                0x00001aac                _vfiprintf_r
+ .text._printf_common
+                0x00001d20       0xde c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00001d20                _printf_common
+ *fill*         0x00001dfe        0x2 
+ .text._printf_i
+                0x00001e00      0x224 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00001e00                _printf_i
+ .text._sbrk_r  0x00002024       0x24 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-sbrkr.o)
+                0x00002024                _sbrk_r
+ .text.__sread  0x00002048       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+                0x00002048                __sread
+ .text.__swrite
+                0x00002070       0x38 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+                0x00002070                __swrite
+ .text.__sseek  0x000020a8       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+                0x000020a8                __sseek
+ .text.__sclose
+                0x000020d4        0xc c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+                0x000020d4                __sclose
+ .text._write_r
+                0x000020e0       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-writer.o)
+                0x000020e0                _write_r
+ .text._close_r
+                0x00002108       0x24 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-closer.o)
+                0x00002108                _close_r
+ .text._fstat_r
+                0x0000212c       0x24 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fstatr.o)
+                0x0000212c                _fstat_r
+ .text._isatty_r
+                0x00002150       0x24 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-isattyr.o)
+                0x00002150                _isatty_r
+ .text._lseek_r
+                0x00002174       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lseekr.o)
+                0x00002174                _lseek_r
+ .text.memchr   0x0000219c       0x16 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memchr-stub.o)
+                0x0000219c                memchr
+ *fill*         0x000021b2        0x2 
+ .text.__malloc_lock
+                0x000021b4       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-mlock.o)
+                0x000021b4                __malloc_lock
+ .text.__malloc_unlock
+                0x000021c4       0x10 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-mlock.o)
+                0x000021c4                __malloc_unlock
+ .text._read_r  0x000021d4       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-readr.o)
+                0x000021d4                _read_r
+ .text          0x000021fc       0x14 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+                0x000021fc                __gnu_thumb1_case_shi
+ .text._sbrk    0x00002210       0x1c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
+                0x00002210                _sbrk
+ .text._exit    0x0000222c        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(_exit.o)
+                0x0000222c                _exit
+ *(.init)
+ .init          0x00002230        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x00002230                _init
+ .init          0x00002234        0x8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ *(.fini)
+ .fini          0x0000223c        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000223c                _fini
+ .fini          0x00002240        0x8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata.gsm_init.str1.4
+                0x00002248       0x32 ./User/main.o
+ *fill*         0x0000227a        0x2 
+ .rodata.gsm_init
+                0x0000227c       0x20 ./User/main.o
+ .rodata.gsm_datacall.str1.4
+                0x0000229c       0x60 ./User/main.o
+ .rodata.gsm_datacall
+                0x000022fc       0x2c ./User/main.o
+ .rodata.gsm_get_snapshot.str1.4
+                0x00002328       0x97 ./User/main.o
+                                 0x9b (size before relaxing)
+ *fill*         0x000023bf        0x1 
+ .rodata.gsm_get_snapshot
+                0x000023c0       0x44 ./User/main.o
+ .rodata.gsm_connect.str1.4
+                0x00002404       0x86 ./User/main.o
+ *fill*         0x0000248a        0x2 
+ .rodata.gsm_connect
+                0x0000248c       0x44 ./User/main.o
+ .rodata.UART2_TEST_HANDLE.str1.4
+                0x000024d0       0x16 ./User/main.o
+ *fill*         0x000024e6        0x2 
+ .rodata.UART1_TEST_HANDLE.str1.4
+                0x000024e8       0x12 ./User/main.o
+ *fill*         0x000024fa        0x2 
+ .rodata.gsm_idle.str1.4
+                0x000024fc       0x22 ./User/main.o
+ *fill*         0x0000251e        0x2 
+ .rodata.main.str1.4
+                0x00002520       0x37 ./User/main.o
+ *fill*         0x00002557        0x1 
+ .rodata.main   0x00002558       0x1c ./User/main.o
+ .rodata        0x00002574       0x20 ./User/timer.o
+ .rodata        0x00002594       0x1c ./Library/clk.o
+ .rodata.stackDump.str1.4
+                0x000025b0       0x60 ./Library/retarget.o
+ .rodata.Hard_Fault_Handler.str1.4
+                0x00002610       0x16 ./Library/retarget.o
+ *fill*         0x00002626        0x2 
+ .rodata.gau32ClkSrcTbl
+                0x00002628       0x20 ./CMSIS/system_M0564.o
+                0x00002628                gau32ClkSrcTbl
+ .rodata._global_impure_ptr
+                0x00002648        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-impure.o)
+                0x00002648                _global_impure_ptr
+ .rodata.__sf_fake_stderr
+                0x0000264c       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x0000264c                __sf_fake_stderr
+ .rodata.__sf_fake_stdin
+                0x0000266c       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x0000266c                __sf_fake_stdin
+ .rodata.__sf_fake_stdout
+                0x0000268c       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+                0x0000268c                __sf_fake_stdout
+ .rodata._vfprintf_r.str1.1
+                0x000026ac       0x11 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+ .rodata._printf_i.str1.1
+                0x000026bd       0x22 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ *(.eh_frame*)
+ *fill*         0x000026df        0x1 
+ .eh_frame      0x000026e0        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .eh_frame      0x000026e0        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+
+.glue_7         0x000026e4        0x0
+ .glue_7        0x000026e4        0x0 linker stubs
+
+.glue_7t        0x000026e4        0x0
+ .glue_7t       0x000026e4        0x0 linker stubs
+
+.vfp11_veneer   0x000026e4        0x0
+ .vfp11_veneer  0x000026e4        0x0 linker stubs
+
+.v4_bx          0x000026e4        0x0
+ .v4_bx         0x000026e4        0x0 linker stubs
+
+.iplt           0x000026e4        0x0
+ .iplt          0x000026e4        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x000026e4                __exidx_start = .
+
+.ARM.exidx      0x000026e4        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x000026e4        0x8 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+                                 0x10 (size before relaxing)
+                0x000026ec                __exidx_end = .
+                0x000026ec                __etext = .
+
+.rel.dyn        0x000026ec        0x0
+ .rel.iplt      0x000026ec        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.data           0x20000000       0xe4 load address 0x000026ec
+                0x20000000                __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data.DBQUOTE  0x20000000        0x1 ./User/main.o
+                0x20000000                DBQUOTE
+ *fill*         0x20000001        0x3 
+ .data.WURL     0x20000004       0x64 ./User/main.o
+                0x20000004                WURL
+ .data.gsmState
+                0x20000068        0x1 ./User/main.o
+                0x20000068                gsmState
+ *fill*         0x20000069        0x3 
+ .data.CyclesPerUs
+                0x2000006c        0x4 ./CMSIS/system_M0564.o
+                0x2000006c                CyclesPerUs
+ .data.PllClock
+                0x20000070        0x4 ./CMSIS/system_M0564.o
+                0x20000070                PllClock
+ .data.SystemCoreClock
+                0x20000074        0x4 ./CMSIS/system_M0564.o
+                0x20000074                SystemCoreClock
+ .data._impure_ptr
+                0x20000078        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-impure.o)
+                0x20000078                _impure_ptr
+ .data.impure_data
+                0x2000007c       0x60 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-impure.o)
+                0x200000dc                . = ALIGN (0x4)
+                0x200000dc                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x200000dc                PROVIDE (__preinit_array_end = .)
+                0x200000dc                . = ALIGN (0x4)
+                0x200000dc                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x200000dc        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x200000e0                PROVIDE (__init_array_end = .)
+                0x200000e0                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x200000e0        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                [!provide]                PROVIDE (__fini_array_end = .)
+ *(.jcr*)
+                0x200000e4                . = ALIGN (0x4)
+                0x200000e4                __data_end__ = .
+
+.igot.plt       0x200000e4        0x0 load address 0x000027d0
+ .igot.plt      0x200000e4        0x0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.bss            0x200000e4      0x458 load address 0x000027d0
+                0x200000e4                . = ALIGN (0x4)
+                0x200000e4                __bss_start__ = .
+ *(.bss*)
+ .bss           0x200000e4       0x1c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .bss.g_u32AdcIntFlag
+                0x20000100        0x4 ./User/ADC.o
+                0x20000100                g_u32AdcIntFlag
+ .bss.DITION    0x20000104        0x1 ./User/main.o
+                0x20000104                DITION
+ *fill*         0x20000105        0x3 
+ .bss.IME       0x20000108       0x14 ./User/main.o
+                0x20000108                IME
+ .bss.UART0_RX_BUF
+                0x2000011c       0xfa ./User/main.o
+                0x2000011c                UART0_RX_BUF
+ *fill*         0x20000216        0x2 
+ .bss.UART1_RX_BUF
+                0x20000218       0xfa ./User/main.o
+                0x20000218                UART1_RX_BUF
+ *fill*         0x20000312        0x2 
+ .bss.UART2_RX_BUF
+                0x20000314      0x1f4 ./User/main.o
+                0x20000314                UART2_RX_BUF
+ .bss.configMode
+                0x20000508        0x1 ./User/main.o
+                0x20000508                configMode
+ .bss.count_0   0x20000509        0x1 ./User/main.o
+                0x20000509                count_0
+ .bss.count_1   0x2000050a        0x1 ./User/main.o
+                0x2000050a                count_1
+ *fill*         0x2000050b        0x1 
+ .bss.count_2   0x2000050c        0x2 ./User/main.o
+                0x2000050c                count_2
+ *fill*         0x2000050e        0x2 
+ .bss.g_au32TMRINTCount
+                0x20000510       0x10 ./User/main.o
+                0x20000510                g_au32TMRINTCount
+ .bss.loopCount
+                0x20000520        0x1 ./User/main.o
+                0x20000520                loopCount
+ .bss.loopDelay
+                0x20000521        0x1 ./User/main.o
+                0x20000521                loopDelay
+ .bss.newWord_1
+                0x20000522        0x1 ./User/main.o
+                0x20000522                newWord_1
+ .bss.readIMEI  0x20000523        0x1 ./User/main.o
+                0x20000523                readIMEI
+ .bss.timeOut   0x20000524        0x1 ./User/main.o
+                0x20000524                timeOut
+ .bss.tloopCount
+                0x20000525        0x1 ./User/main.o
+                0x20000525                tloopCount
+ *fill*         0x20000526        0x2 
+ .bss.errno     0x20000528        0x4 ./CMSIS/GCC/_syscalls.o
+                0x20000528                errno
+ .bss.__lock___malloc_recursive_mutex
+                0x2000052c        0x1 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+                0x2000052c                __lock___malloc_recursive_mutex
+ .bss.__lock___sfp_recursive_mutex
+                0x2000052d        0x1 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+                0x2000052d                __lock___sfp_recursive_mutex
+ .bss.__lock___sinit_recursive_mutex
+                0x2000052e        0x1 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+                0x2000052e                __lock___sinit_recursive_mutex
+ *fill*         0x2000052f        0x1 
+ .bss.__malloc_free_list
+                0x20000530        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x20000530                __malloc_free_list
+ .bss.__malloc_sbrk_start
+                0x20000534        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x20000534                __malloc_sbrk_start
+ .bss.heap_end.0
+                0x20000538        0x4 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
+ *(COMMON)
+                0x2000053c                . = ALIGN (0x4)
+                0x2000053c                __bss_end__ = .
+
+.heap           0x20000540      0x100
+                0x20000540                __HeapBase = .
+                0x20000540                __end__ = .
+                0x20000540                end = __end__
+ *(.heap*)
+ .heap          0x20000540      0x100 ./CMSIS/GCC/startup_M0564.o
+                0x20000640                __HeapLimit = .
+
+.stack_dummy    0x20000540      0x400
+ *(.stack*)
+ .stack         0x20000540      0x400 ./CMSIS/GCC/startup_M0564.o
+                0x20005000                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
+                0x20004c00                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x20005000                PROVIDE (__stack = __StackTop)
+                0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
+OUTPUT(QUCTEL 4G HTTP TEST.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x28
+ .ARM.attributes
+                0x00000000       0x1e c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .ARM.attributes
+                0x0000001e       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.attributes
+                0x00000065       0x2c ./User/ADC.o
+ .ARM.attributes
+                0x00000091       0x2c ./User/main.o
+ .ARM.attributes
+                0x000000bd       0x2c ./User/timer.o
+ .ARM.attributes
+                0x000000e9       0x2c ./Library/clk.o
+ .ARM.attributes
+                0x00000115       0x2c ./Library/retarget.o
+ .ARM.attributes
+                0x00000141       0x2c ./Library/uart.o
+ .ARM.attributes
+                0x0000016d       0x2c ./CMSIS/GCC/_syscalls.o
+ .ARM.attributes
+                0x00000199       0x1b ./CMSIS/GCC/startup_M0564.o
+ .ARM.attributes
+                0x000001b4       0x2c ./CMSIS/system_M0564.o
+ .ARM.attributes
+                0x000001e0       0x1e c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000001fe       0x1e c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000021c       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000248       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000274       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000002a0       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x000002cc       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000002f8       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000324       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o)
+ .ARM.attributes
+                0x00000350       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o)
+ .ARM.attributes
+                0x0000037c       0x1c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000398       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strstr.o)
+ .ARM.attributes
+                0x000003c4       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wbuf.o)
+ .ARM.attributes
+                0x000003f0       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wsetup.o)
+ .ARM.attributes
+                0x0000041c       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x00000448       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x00000474       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x000004a0       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .ARM.attributes
+                0x000004cc       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o)
+ .ARM.attributes
+                0x000004f8       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x00000524       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x00000550       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+ .ARM.attributes
+                0x0000057c       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .ARM.attributes
+                0x000005a8       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x000005d4       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x00000600       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-writer.o)
+ .ARM.attributes
+                0x0000062c       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-closer.o)
+ .ARM.attributes
+                0x00000658       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fstatr.o)
+ .ARM.attributes
+                0x00000684       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-isattyr.o)
+ .ARM.attributes
+                0x000006b0       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lseekr.o)
+ .ARM.attributes
+                0x000006dc       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memchr-stub.o)
+ .ARM.attributes
+                0x00000708       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000734       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-readr.o)
+ .ARM.attributes
+                0x00000760       0x1e c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+ .ARM.attributes
+                0x0000077e       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .ARM.attributes
+                0x000007aa       0x1e c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .ARM.attributes
+                0x000007c8       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
+ .ARM.attributes
+                0x000007f4       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(_exit.o)
+
+.comment        0x00000000       0x49
+ .comment       0x00000000       0x49 ./User/ADC.o
+                                 0x4a (size before relaxing)
+ .comment       0x00000049       0x4a ./User/main.o
+ .comment       0x00000049       0x4a ./User/timer.o
+ .comment       0x00000049       0x4a ./Library/clk.o
+ .comment       0x00000049       0x4a ./Library/retarget.o
+ .comment       0x00000049       0x4a ./Library/uart.o
+ .comment       0x00000049       0x4a ./CMSIS/GCC/_syscalls.o
+ .comment       0x00000049       0x4a ./CMSIS/system_M0564.o
+
+.debug_info     0x00000000     0x6b63
+ .debug_info    0x00000000      0x346 ./User/ADC.o
+ .debug_info    0x00000346     0x29fd ./User/main.o
+ .debug_info    0x00002d43      0x885 ./User/timer.o
+ .debug_info    0x000035c8      0xb0d ./Library/clk.o
+ .debug_info    0x000040d5      0xe0b ./Library/retarget.o
+ .debug_info    0x00004ee0      0xd90 ./Library/uart.o
+ .debug_info    0x00005c70      0xa9a ./CMSIS/GCC/_syscalls.o
+ .debug_info    0x0000670a       0x26 ./CMSIS/GCC/startup_M0564.o
+ .debug_info    0x00006730      0x433 ./CMSIS/system_M0564.o
+
+.debug_abbrev   0x00000000     0x1378
+ .debug_abbrev  0x00000000      0x133 ./User/ADC.o
+ .debug_abbrev  0x00000133      0x46f ./User/main.o
+ .debug_abbrev  0x000005a2      0x1e6 ./User/timer.o
+ .debug_abbrev  0x00000788      0x2c9 ./Library/clk.o
+ .debug_abbrev  0x00000a51      0x332 ./Library/retarget.o
+ .debug_abbrev  0x00000d83      0x2cd ./Library/uart.o
+ .debug_abbrev  0x00001050      0x19f ./CMSIS/GCC/_syscalls.o
+ .debug_abbrev  0x000011ef       0x14 ./CMSIS/GCC/startup_M0564.o
+ .debug_abbrev  0x00001203      0x175 ./CMSIS/system_M0564.o
+
+.debug_aranges  0x00000000      0x478
+ .debug_aranges
+                0x00000000       0x40 ./User/ADC.o
+ .debug_aranges
+                0x00000040       0xd8 ./User/main.o
+ .debug_aranges
+                0x00000118       0x78 ./User/timer.o
+ .debug_aranges
+                0x00000190       0xd0 ./Library/clk.o
+ .debug_aranges
+                0x00000260       0x78 ./Library/retarget.o
+ .debug_aranges
+                0x000002d8       0x88 ./Library/uart.o
+ .debug_aranges
+                0x00000360       0xd0 ./CMSIS/GCC/_syscalls.o
+ .debug_aranges
+                0x00000430       0x20 ./CMSIS/GCC/startup_M0564.o
+ .debug_aranges
+                0x00000450       0x28 ./CMSIS/system_M0564.o
+
+.debug_ranges   0x00000000      0x450
+ .debug_ranges  0x00000000       0x30 ./User/ADC.o
+ .debug_ranges  0x00000030       0xe0 ./User/main.o
+ .debug_ranges  0x00000110       0x68 ./User/timer.o
+ .debug_ranges  0x00000178       0xc0 ./Library/clk.o
+ .debug_ranges  0x00000238       0x68 ./Library/retarget.o
+ .debug_ranges  0x000002a0       0xc0 ./Library/uart.o
+ .debug_ranges  0x00000360       0xc0 ./CMSIS/GCC/_syscalls.o
+ .debug_ranges  0x00000420       0x30 ./CMSIS/system_M0564.o
+
+.debug_line     0x00000000     0x312a
+ .debug_line    0x00000000      0x23f ./User/ADC.o
+ .debug_line    0x0000023f      0xb9b ./User/main.o
+ .debug_line    0x00000dda      0x52d ./User/timer.o
+ .debug_line    0x00001307      0x8a4 ./Library/clk.o
+ .debug_line    0x00001bab      0x4c3 ./Library/retarget.o
+ .debug_line    0x0000206e      0x84a ./Library/uart.o
+ .debug_line    0x000028b8      0x5a3 ./CMSIS/GCC/_syscalls.o
+ .debug_line    0x00002e5b       0x6a ./CMSIS/GCC/startup_M0564.o
+ .debug_line    0x00002ec5      0x265 ./CMSIS/system_M0564.o
+
+.debug_str      0x00000000     0x1ab9
+ .debug_str     0x00000000      0x299 ./User/ADC.o
+                                0x2ec (size before relaxing)
+ .debug_str     0x00000299      0xab9 ./User/main.o
+                                0xcd3 (size before relaxing)
+ .debug_str     0x00000d52      0x1af ./User/timer.o
+                                0x502 (size before relaxing)
+ .debug_str     0x00000f01      0x2e7 ./Library/clk.o
+                                0x59b (size before relaxing)
+ .debug_str     0x000011e8      0x42d ./Library/retarget.o
+                                0x68b (size before relaxing)
+ .debug_str     0x00001615      0x1ab ./Library/uart.o
+                                0x6f6 (size before relaxing)
+ .debug_str     0x000017c0      0x27c ./CMSIS/GCC/_syscalls.o
+                                0x4a1 (size before relaxing)
+ .debug_str     0x00001a3c       0x2b ./CMSIS/GCC/startup_M0564.o
+                                 0x58 (size before relaxing)
+ .debug_str     0x00001a67       0x52 ./CMSIS/system_M0564.o
+                                0x326 (size before relaxing)
+
+.debug_frame    0x00000000     0x13a8
+ .debug_frame   0x00000000       0x68 ./User/ADC.o
+ .debug_frame   0x00000068      0x250 ./User/main.o
+ .debug_frame   0x000002b8      0x104 ./User/timer.o
+ .debug_frame   0x000003bc      0x210 ./Library/clk.o
+ .debug_frame   0x000005cc      0x100 ./Library/retarget.o
+ .debug_frame   0x000006cc      0x15c ./Library/uart.o
+ .debug_frame   0x00000828      0x230 ./CMSIS/GCC/_syscalls.o
+ .debug_frame   0x00000a58       0x3c ./CMSIS/system_M0564.o
+ .debug_frame   0x00000a94       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000ab4       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00000ad4       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00000afc       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00000b28       0x28 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000b50       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000b70       0x50 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-printf.o)
+ .debug_frame   0x00000bc0       0x44 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-puts.o)
+ .debug_frame   0x00000c04       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-strstr.o)
+ .debug_frame   0x00000c30       0x48 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00000c78       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00000ca4       0x68 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fflush.o)
+ .debug_frame   0x00000d0c      0x170 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00000e7c       0x58 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x00000ed4       0xb0 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lock.o)
+ .debug_frame   0x00000f84       0x54 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x00000fd8       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00001004       0x50 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00001054       0x9c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x000010f0       0x54 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00001144       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001170       0x90 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00001200       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-writer.o)
+ .debug_frame   0x0000122c       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-closer.o)
+ .debug_frame   0x00001258       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00001284       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x000012b0       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x000012dc       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x000012fc       0x40 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x0000133c       0x2c c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg_nano.a(lib_a-readr.o)
+ .debug_frame   0x00001368       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(sbrk.o)
+ .debug_frame   0x00001388       0x20 c:/users/natar/onedrive/documents/venkiworkspace/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libnosys.a(_exit.o)
+
+.debug_loc      0x00000000     0x21a7
+ .debug_loc     0x00000000      0x4df ./User/main.o
+ .debug_loc     0x000004df      0x46f ./User/timer.o
+ .debug_loc     0x0000094e      0x6d7 ./Library/clk.o
+ .debug_loc     0x00001025      0x1e3 ./Library/retarget.o
+ .debug_loc     0x00001208      0x8bf ./Library/uart.o
+ .debug_loc     0x00001ac7      0x5ed ./CMSIS/GCC/_syscalls.o
+ .debug_loc     0x000020b4       0xf3 ./CMSIS/system_M0564.o
