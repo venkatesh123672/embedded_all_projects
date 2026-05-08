@@ -4,7 +4,7 @@
  * $Revision: 2 $
  * $Date: 16/10/17 3:06p $
 
- * @note
+=
  * Copyright (C) 2016 Nuvoton Technology Corp. All rights reserved.
  *****************************************************************************/
 #include <stdio.h>
