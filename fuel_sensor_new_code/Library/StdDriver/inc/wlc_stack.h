@@ -1,6 +1,6 @@
 #ifndef STDDRIVER_INC_WLC_STACK_H_
 #define STDDRIVER_INC_WLC_STACK_H_
-#define SIZEOFVALUE      10
+#define SIZEOFVALUE      20
 #pragma pack(1)
 typedef struct
 {
@@ -48,6 +48,9 @@ enum
 	FLOW_SENSOR,
 	FUEL_GUAGE,
 	THAFT,
+	DISTANCE,
+	BATTERY_SATUS,
+	AFTER_THAFT
 }COMMON_VALUE;
 
 //void receive();

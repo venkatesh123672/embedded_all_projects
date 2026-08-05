@@ -22,10 +22,10 @@ uint16_t ReadRegister(uint8_t address)
 	 address = address & 0x7F;
 	 SPI_SET_SS_LOW(SPI0);
 	 SPI_WRITE_TX(SPI0, address);
-     TIMER_Delay(TIMER0,1);
+     while(SPI_IS_BUSY(SPI0));
 	 SPI_WRITE_TX(SPI0, 0x00);
 	 value23=SPI_READ_RX(SPI0);
-	 TIMER_Delay(TIMER0,1);
+	 while(SPI_IS_BUSY(SPI0));
 	 SPI_SET_SS_HIGH(SPI0);
 	return value23;
 }
@@ -34,9 +34,9 @@ void WriteRegisterister(uint8_t address, uint16_t value)
 	  address = address | 0x80;
 	  SPI_SET_SS_LOW(SPI0);
 	  SPI_WRITE_TX(SPI0, address);
-	  TIMER_Delay(TIMER0,1);
+	  while(SPI_IS_BUSY(SPI0));
 	  SPI_WRITE_TX(SPI0, value);
-	  TIMER_Delay(TIMER0,1);
+	  while(SPI_IS_BUSY(SPI0));
 	  SPI_SET_SS_HIGH(SPI0);
 
 }
@@ -52,9 +52,9 @@ void WriteRegisterister(uint8_t address, uint16_t value)
 	DEF_BITRATELSB | RF_BITRATELSB_4800,
 	DEF_FDEVMSB | RF_FDEVMSB_5000,
 	DEF_FDEVLSB | RF_FDEVLSB_5000,
-	DEF_FRFMSB | RF_FRFMSB_865,
-	DEF_FRFMID | RF_FRFMID_865,
-	DEF_FRFLSB | RF_FRFLSB_865,
+	DEF_FRFMSB | RF_FRFMSB_863,
+	DEF_FRFMID | RF_FRFMID_863,
+	DEF_FRFLSB | RF_FRFLSB_863,
 	DEF_OSC1,
 	DEF_OSC2,
 	DEF_LOWBAT | RF_LOWBAT_OFF | RF_LOWBAT_TRIM_1835,
@@ -89,7 +89,7 @@ void WriteRegisterister(uint8_t address, uint16_t value)
 	DEF_DIOMAPPING2 | RF_DIOMAPPING2_DIO4_00 | RF_DIOMAPPING2_DIO5_01 | RF_DIOMAPPING2_CLKOUT_OFF,
 	DEF_IRQFLAGS1,
 	DEF_IRQFLAGS2,
-	DEF_RSSITHRESH | 228,	                  // Must be set to (-Sensitivity x 2)
+	DEF_RSSITHRESH | 240,	                  // Must be set to (-Sensitivity x 2)
 	DEF_RXTIMEOUT1 | RF_RXTIMEOUT1_RXSTART_VALUE,
 	DEF_RXTIMEOUT2 | RF_RXTIMEOUT2_RSSITHRESH_VALUE,
 
@@ -238,10 +238,11 @@ void SendRfFrame(uint8_t *buffer, uint8_t size, uint8_t *pReturnCode)
 	}
 	SetRFMode(RF_TRANSMITTER);                                       //   => Tx starts since FIFO is not empty
 //	TIMER_Delay(TIMER0,59900);
-	TIMER_Delay(TIMER0,999995);
+//	TIMER_Delay(TIMER0,999995);
+	 while (!(ReadRegister(REG_IRQFLAGS2) & RF_IRQFLAGS2_PACKETSENT));//
 
-	do {
-	} while ((ReadRegister(REG_PALEVEL) & RF_DIOMAPPING1_DIO0_00)); // Wait for Packet sent
+//	do {
+//	} while ((ReadRegister(REG_PALEVEL) & RF_DIOMAPPING1_DIO0_00)); // Wait for Packet sent
 
 	SetRFMode(RF_SLEEP);
 	RFState |= RF_STOP;
@@ -253,13 +254,13 @@ void SendRfFrame(uint8_t *buffer, uint8_t size, uint8_t *pReturnCode)
 ********************************************************************/
 void receiveInit()
 {
-	uint8_t TempRFState;
+	uint8_t TempRFState=0;
 	TempRFState = RFState;
 	if (TempRFState & RF_STOP)
 	{
 		RFFramePos = 0;
 		RFFrameSize = 2;
-		WriteRegisterister(REG_DIOMAPPING1, (RegistersCfg[REG_DIOMAPPING1] & 0x3F) | RF_DIOMAPPING1_DIO0_01); // DIO0 is "PAYLOADREADY"
+		WriteRegisterister(REG_DIOMAPPING1, (RegistersCfg[REG_DIOMAPPING1] & 0x3F) | RF_DIOMAPPING1_DIO0_00); // DIO0 is "PAYLOADREADY"
 		WriteRegisterister(REG_SYNCCONFIG, (RegistersCfg[REG_SYNCCONFIG] & 0xBF) | RF_SYNC_FIFOFILL_AUTO);
 		GPIO_EnableInt(PD, 3, GPIO_INT_BOTH_EDGE);
 		SetRFMode(RF_RECEIVER);
@@ -365,4 +366,125 @@ void clr_Listen_mode()
 		SetRFMode(RF_STANDBY);
 		WriteRegisterister(REG_OPMODE,  ( RF_OPMODE_SEQUENCER_ON | RF_OPMODE_LISTEN_OFF |RF_OPMODE_LISTENABORT | RF_OPMODE_STANDBY));
 		WriteRegisterister(REG_OPMODE,  ( RF_OPMODE_SEQUENCER_ON | RF_OPMODE_LISTEN_OFF  | RF_OPMODE_STANDBY));
+}
+void set_required_baud_rate_4800()
+{
+    // =====================================
+    // Bitrate = 4800 bps
+    // =====================================
+    WriteRegisterister(0x03, 0x1A);   // REG_BITRATEMSB
+    WriteRegisterister(0x04, 0x0B);   // REG_BITRATELSB
+
+    // =====================================
+    // Frequency deviation = 5kHz
+    // =====================================
+    WriteRegisterister(0x05, 0x00);   // REG_FDEVMSB
+    WriteRegisterister(0x06, 0xA4);   // REG_FDEVLSB
+
+    // =====================================
+    // RX bandwidth
+    // =====================================
+    WriteRegisterister(0x19, 0x4B);   // RXBW ˜ 25kHz
+    WriteRegisterister(0x1A, 0x43);   // AFCBW ˜ 50kHz
+
+    // =====================================
+    // RSSI threshold
+    // =====================================
+    WriteRegisterister(0x29, 0xDC);   // around -110dBm
+
+    // =====================================
+    // Preamble length
+    // =====================================
+    WriteRegisterister(0x2C, 0x00);
+    WriteRegisterister(0x2D, 0x08);   // 8-byte preamble
+
+//    // =====================================
+//    // Sync configuration
+//    // =====================================
+//    WriteRegisterister(0x2E, 0x88);   // Sync ON, FIFO fill condition
+//    WriteRegisterister(0x2F, 0x2D);   // Sync byte 1
+//    WriteRegisterister(0x30, 0xD4);   // Sync byte 2
+
+    // =====================================
+    // Packet config
+    // =====================================
+    WriteRegisterister(0x37, 0x90);   // Whitening ON
+
+    // =====================================
+    // AFC auto
+    // =====================================
+    WriteRegisterister(0x1E, 0x0C);
+
+    // =====================================
+    // High sensitivity mode
+    // =====================================
+    WriteRegisterister(0x58, 0x2D);
+}
+void set_required_baud_rate_9600()
+{
+    // =========================
+    // Bitrate = 9600bps
+    // =========================
+    WriteRegisterister(0x03, 0x0D);   // REG_BITRATEMSB
+    WriteRegisterister(0x04, 0x05);   // REG_BITRATELSB
+
+    // =========================
+    // Frequency deviation = 5kHz
+    // =========================
+    WriteRegisterister(0x05, 0x00);
+    WriteRegisterister(0x06, 0xA4);
+
+    // =========================
+    // RX Bandwidth
+    // =========================
+    WriteRegisterister(0x19, 0x4A);   // RXBW ˜ 50kHz
+    WriteRegisterister(0x1A, 0x42);   // AFCBW ˜ 83kHz
+
+    // =========================
+    // Preamble length
+    // =========================
+    WriteRegisterister(0x2C, 0x00);
+    WriteRegisterister(0x2D, 0x05);   // 5 bytes preamble
+
+//    // =========================
+//    // Sync config
+//    // =========================
+//    WriteRegisterister(0x2E, 0x88);   // Sync ON, FIFO fill
+//    WriteRegisterister(0x2F, 0x2D);   // Sync byte 1
+//    WriteRegisterister(0x30, 0xD4);   // Sync byte 2
+
+    // =========================
+    // Packet config
+    // =========================
+    WriteRegisterister(0x37, 0x90);   // Whitening ON
+
+    // =========================
+    // RSSI Threshold
+    // =========================
+    WriteRegisterister(0x29, 0xDC);   // -110dBm
+
+    // =========================
+    // AFC FEI
+    // =========================
+    WriteRegisterister(0x1E, 0x0C);   // AFC auto
+
+    // =========================
+    // Sensitivity boost
+    // =========================
+    WriteRegisterister(0x58, 0x2D);
+}
+/*******************************************************************
+** set_higest_baud rate : we can set required baud rate, changing below regisor value **
+********************************************************************/
+void set_required_baud_rate()
+{
+  WriteRegisterister(0x03, 0x00);  //REG_BITRATEMSB: 300kbps (0x006B, see DS p20)
+  WriteRegisterister(0x04, 0x6B);  //REG_BITRATELSB: 300kbps (0x006B, see DS p20)
+  WriteRegisterister(0x19, 0x40);  //REG_RXBW: 500kHz
+  WriteRegisterister(0x1A, 0x80);  //REG_AFCBW: 500kHz
+  WriteRegisterister(0x05, 0x13);  //REG_FDEVMSB: 300khz (0x1333)
+  WriteRegisterister(0x06, 0x33);  //REG_FDEVLSB: 300khz (0x1333)
+  WriteRegisterister(0x29, 180);   //set REG_RSSITHRESH to -120dBm
+  WriteRegisterister(0x37, 0x90);  //DC=WHITENING, CRCAUTOOFF=0,DC: 00=none, 01=manchester, 10=whitening
+  WriteRegisterister(0x58 ,0x2D);  //Set device to High Sencitivity
 }
