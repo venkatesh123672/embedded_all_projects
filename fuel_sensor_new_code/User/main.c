@@ -65,7 +65,8 @@
 #define icmi_number_avalible      0x35
 
 
-#define mobile_number /*"9481800631"*/"9032888261"
+#define mobile_number /*"9481800631"*/"9663263780"
+#define batter_message_count  50
 
 void door_sensor_status();
 void smart_switch_statuas();
@@ -123,14 +124,16 @@ uint8_t newGpsData = 0;
 char before_f[20];
 char after_f[20];
 
+uint8_t send_counter=0;
+
 /*GPS DATA*/
 /*uint8_t *gpsData;
 uint8_t *endofStr;*/
 uint8_t *rtc;
 
 uint8_t gnssutc[11];
-uint8_t gnss_lat[10];
-uint8_t gnss_lon[10];
+uint8_t gnss_lat[9];
+uint8_t gnss_lon[9];
 uint8_t gnsshdop[4];
 uint8_t gnssalt[6];
 uint8_t gnssfix[2];
@@ -253,6 +256,9 @@ uint32_t LONG_min_l;
 uint8_t secLongUStr[2];
 uint8_t secLongLStr[5];
 
+uint8_t batter_timer=0;
+uint8_t timer_counter=0;
+
 
 uint8_t gpsLatitudeData[API_BUFF_LEN];
 uint8_t gpsLongitudeData[API_BUFF_LEN];
@@ -286,9 +292,11 @@ uint8_t WLTGPSDATE[BUF_LEN_SMALL] = "gpsdate=";
 uint8_t WLTEVENTID[BUF_LEN_SMALL] = "eventid=";
 uint8_t WLTALTITUDE[BUF_LEN_SMALL] = "altitude=";
 
-uint8_t SENSOR_MESSAGE[50] ;
+uint8_t SENSOR_MESSAGE[50]="\"NULL\"" ;
 
-uint8_t SENSOR_MESSAGE_RESULT[50];
+
+uint8_t sensor_counter=0;
+uint8_t SENSOR_MESSAGE_RESULT[50]="NULL";
 
 uint8_t fuel_sensor[40];
 uint8_t Message_r[50];
@@ -392,6 +400,8 @@ uint8_t   spi_rec_count = 0;
 uint8_t Key1_Flag=0;
 uint8_t rec_done=0;
 
+uint8_t battery_test=0;
+
 uint8_t uatr_rec_buf[UART_REC_BUF_SiZE];
 uint8_t uart_rec_count=0;
 uint8_t ask_flag=0;
@@ -456,7 +466,8 @@ uint8_t num2[10] ;
 uint8_t calling_chek=0;
 uint8_t police_chek=0;
 uint8_t emergency_chek=0;
-uint8_t call_test=0;
+uint8_t call_test=1;
+uint8_t check_call_test=1;
 
 uint8_t datetime[40];
 
@@ -476,7 +487,7 @@ uint8_t wake_up_msg[WAKE_UP_BUF_SIZE]={"Hello_Device_this_is_Wake_up_messege_fro
 /* Function prototype declaration */
 void SYS_Init(void);
 void SPI_Init(void);
-void get_gps_data();
+//void get_gps_data();
 void date_time_function();
 void vehicale_registrion();
 void int_and_ext_battery_percentges();
@@ -547,13 +558,18 @@ void receive(void)
 	uint8_t ReturnCode = -1;
 
 	memset(RFbuffer,0,BUFSIZE);
+	memset(&WLC1,0,sizeof(WLC1_t));
+	RFbufferSize=sizeof(WLC1_t);
+	ReceiveRfFrame(Rec_cpy,&RFbufferSize, &ReturnCode);             // Receives the frame from the RF chip
+	memcpy(Rec_cpy,Rec_cpy+2,sizeof(WLC1_t));
+	memcpy(&WLC1,Rec_cpy,sizeof(WLC1_t));
+	if(WLC1.Destination == CONTROL_PANEL)
+	         check_receive_packet();
 
-	RFbufferSize=sizeof(WLC_t);
-	ReceiveRfFrame(RFbuffer,&RFbufferSize, &ReturnCode);             // Receives the frame from the RF chip
-	memcpy(Rec_cpy,RFbuffer+2,sizeof(WLC_t));
-	memcpy(&WLC,Rec_cpy,sizeof(WLC_t));
-	check_receive_packet();
+	else
+		memset(&WLC1,0,sizeof(WLC1_t));
 
+	SetRFMode(RF_TRANSMITTER);
 }
 // ***Reset RFM69 chip*****//
 void reset_rfm69()
@@ -688,9 +704,9 @@ void UART2_Init()
 }
 void UART1_IRQHandler(void)
 {
-//	TIMER_DisableInt(TIMER1);
+	TIMER_DisableInt(TIMER1);
     UART1_TEST_HANDLE();
- //   TIMER_EnableInt(TIMER1);
+    TIMER_EnableInt(TIMER1);
 }
 void UART1_TEST_HANDLE()
 {
@@ -858,6 +874,11 @@ void TMR2_IRQHandler(void) {
 		TIMER_ClearIntFlag(TIMER2);
 
 		sim_timer++;
+
+		if(batter_timer)
+		{
+			timer_counter++;
+		}
 //
 //		buzzer_timer++;
 //
@@ -925,6 +946,7 @@ void TMR1_IRQHandler(void)
 		send_value++;
 		  loopCount++;
 		  timeOut = 1;
+		  send_counter++;
 
 	}
 }
@@ -1131,6 +1153,7 @@ int main(void)
     reset_rfm69();
     /* Init RFM69 */
     InitRFChip();
+
 //    set_required_baud_rate_4800();
     set_required_baud_rate();
 //    sim_calling_function();
@@ -1191,8 +1214,9 @@ while(1)
 //	}
 	if((message_sending)&&(call_test))
 	{
+
+    	gps_data_send_sms();
 		message_sending=0;
-		gps_data_send_sms();
 
 	}
 
@@ -1205,8 +1229,8 @@ while(1)
 //       for(int i=0;i<=5;i++)
 		BEEP_OFF;
        {
-		sms_google_buffer[0]=10;
- 		send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,&sms_google_buffer[0]);
+//		sms_google_buffer[0]=10;
+// 		send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,&sms_google_buffer[0]);
 //		delayCounter = 10000;
 //	    delay_loop();
        }
@@ -1390,22 +1414,33 @@ while(1)
     }
 //     }
 
-    sim_card_test_pointer=memmem(UART1_RX_BUF, sizeof(UART1_RX_BUF), "CONNECT",strlen("CONNECT"));
+//    sim_card_test_pointer=memmem(UART1_RX_BUF, sizeof(UART1_RX_BUF), "CONNECT",strlen("CONNECT"));
+//
+//    if(sim_card_test_pointer!=NULL)
+//    {
+//    	call_test=0;
+//    	check_call_test=0;
+//    	count_1=0;
+////    	memset(UART1_RX_BUF, 0, sizeof(UART1_RX_BUF));
+//     }
+//    sim_card_test_pointer=memmem(UART1_RX_BUF, sizeof(UART1_RX_BUF), "OK",strlen("OK"));
+//    if((sim_card_test_pointer!=NULL)&&(check_call_test==0))
+//       {
+//    	call_test=1;
+//    	check_call_test=1;
+//    	count_1=0;
+////    	memset(UART1_RX_BUF, 0, sizeof(UART1_RX_BUF));
+////       	loopCount=0;
+//
+//        }
+//    sim_card_test_pointer =memmem(UART1_RX_BUF, sizeof(UART1_RX_BUF), "+CMS ERROR",strlen("+CMS ERROR"));
+//
+//    	 if((sim_card_test_pointer!=NULL))
+//           {
+//    		 TIMER_EnableInt(TIMER1);
+//             }
 
-    if(sim_card_test_pointer!=NULL)
-    {
-    	call_test=0;
-    	memset(UART1_RX_BUF, 0, sizeof(UART1_RX_BUF));
-     }
-    sim_card_test_pointer=memmem(UART1_RX_BUF, sizeof(UART1_RX_BUF), "OK",strlen("OK"));
-    if(sim_card_test_pointer!=NULL)
-       {
-    	call_test=1;
-    	memset(UART1_RX_BUF, 0, sizeof(UART1_RX_BUF));
-//       	loopCount=0;
-
-        }
-    if((emergency_chek)&&(call_test))
+    if((emergency_chek)&&(call_test)&&(!sms_call_chek))
     {
 
 //    	emergency_chek=0;
@@ -1427,7 +1462,7 @@ while(1)
         sim_calling_function();
 
     }
-    if((police_chek)&&(call_test))
+    if((police_chek)&&(call_test)&&(!sms_call_chek))
     {
 
 //    	police_chek=0;
@@ -1450,7 +1485,7 @@ while(1)
 
 
     }
-    if((calling_chek)&&(call_test))
+    if((calling_chek)&&(call_test)&&(!sms_call_chek))
 	{
 
 //    	calling_chek=0;
@@ -1482,7 +1517,13 @@ while(1)
 
     	UART_Write(UART1, "AT+CPAS\r\n", sizeof("AT+CPAS\r\n"));
     }
-
+  if((battery_test)&&(timer_counter>batter_message_count))
+ {
+	  batter_timer=0;
+	  battery_test=0;
+	  timer_counter=0;
+	  send_sms_battery();
+  }
 
     if(uart_data_registrion)
     {
@@ -1525,7 +1566,7 @@ while(1)
  {
 	recFlag=0;
 	LED_ON;
-	UART_Write(UART2, "loawr_receved\r\n",strlen("loawr_receved\r\n"));
+//	UART_Write(UART2, "loawr_receved\r\n",strlen("loawr_receved\r\n"));
  	receive();
  	LED_OFF;
  }
@@ -1801,6 +1842,7 @@ void gsm_datacall()
 
 		break;
 	case 7:
+		UART_Write(UART1, "AT+QGPS=1\r\n",strlen("AT+QGPS=1\r\n"));
 //		UART_Write(UART1, "AT+CGATT=1\r\n", 12);
 		break;
 	case 8:
@@ -1828,8 +1870,8 @@ void gsm_datacall()
 		break;
 
 	case 13:
-		UART_Write(UART1, "AT+QGPS=1",strlen("AT+QGPS=1"));
-		UART_Write(UART1, "\r\n", strlen("\r\n"));
+		UART_Write(UART1,"AT+QGPSCFG=\"autogps\",1\r\n",strlen("AT+QGPSCFG=\"autogps\",1\r\n"));
+//		UART_Write(UART1, "\r\n", strlen("\r\n"));
 		break;
 	case 14:
 
@@ -2237,7 +2279,7 @@ void gsm_http_report_data()
 //					UART_Write(UART1, ",",strlen(","));
 //					UART_Write(UART1, "1",strlen("1"));
 //					UART_Write(UART1, "\r\n",strlen("\r\n"));
-		loop_delay(3);
+//		loop_delay(3);
 
 //		UART_Write(UART1, "AT+HTTPSSL=1",strlen("AT+HTTPSSL=1"));
 ////		UART_Write(UART1, DBQUOTE, 1);
@@ -2249,7 +2291,7 @@ void gsm_http_report_data()
 
 		break;
 	case 3:
-//		call_test=0;
+		call_test=0;
 //		loop_delay(5);
 //			UART_Write(UART1, "AT+HTTPPARA=",12);
 		UART_Write(UART1, "AT+QHTTPURL=",strlen("AT+QHTTPURL="));
@@ -2397,14 +2439,14 @@ void gnss_query()
 //		UART_Write(UART1, ",", 1);
 //		UART_Write(UART1, "1", 1);
 //		UART_Write(UART1, "\r\n", 2);
-
+		count_1=0;
 		break;
 	case 2:
 
 		UART_Write(UART1, "AT+QGPSLOC=2\r\n", strlen("AT+QGPSLOC=2\r\n"));
 		break;
 	case 3:
-		count_0=0;
+
 
 		break;
 	case 4:
@@ -2423,8 +2465,8 @@ void gnss_query()
 
 	case 7:
 
-		memset(GNSS_data,0,sizeof(GNSS_data));
-		GET_GNSS_data();
+//		memset(GNSS_data,0,sizeof(GNSS_data));
+
 		break;
 
 	case 8:
@@ -2436,7 +2478,7 @@ void gnss_query()
 //		UART_Write(UART1, ",", 1);
 //		UART_Write(UART1, "1", 1);
 //		UART_Write(UART1, "\r\n", 2);
-
+		GET_GNSS_data();
 		break;
 
 	case 9:
@@ -2455,6 +2497,7 @@ void gnss_query()
 				UART_Write(UART1, ",", 1);
 				UART_Write(UART1, "0", 1);
 				UART_Write(UART1, "\r\n", 2);*/
+		sensor_counter++;
 		break;
 
 	case 11:
@@ -2482,14 +2525,14 @@ void gsm_idle()
 		break;
 	case 3:
 
-//		call_test=1;
+		call_test=1;
 		break;
 	case 4:
 		break;
 	case 5:
 		break;
 	case 6:
-		if(((call_test)&&(sim_calling_chek))||(sms_call_chek))
+		if((/*(call_test)&&*/(sim_calling_chek))||(sms_call_chek))
 		{
 			loopCount = 0;
 			UART_Write(UART2, "call is going on \n", strlen("call is going on \n"));
@@ -2645,11 +2688,11 @@ void  GET_GNSS_data()
 
 		strcat(URL,Message);
 
-//		strcat(URL,DBQUOTE);
+		strcat(URL,DBQUOTE);
 
 		strcat(URL,SENSOR_MESSAGE_RESULT);
 
-//		strcat(URL,DBQUOTE);
+		strcat(URL,DBQUOTE);
 
 //		strcat(URL, "\"Fuel Tank Cap Open\"");
 
@@ -2689,42 +2732,48 @@ void  GET_GNSS_data()
 
 		UART_Write(UART2,URL,strlen(URL));
 
+		if(sensor_counter>=2)
+		{
+			sensor_counter=0;
+
+			memset(SENSOR_MESSAGE, 0, sizeof(SENSOR_MESSAGE));
+
+		    memset(SENSOR_MESSAGE_RESULT,0,sizeof(SENSOR_MESSAGE_RESULT));
+
+			strcpy(SENSOR_MESSAGE,"\"NULL\"");
+
+			strcpy(SENSOR_MESSAGE_RESULT,"NULL");
+
+//			strcat(URL,SENSOR_MESSAGE);
+//
+//			strcat(URL,SENSOR_MESSAGE_RESULT);
+
+		}
 
 
 	}
-
-	memset(SENSOR_MESSAGE, 0, sizeof(SENSOR_MESSAGE));
-
-		memset(SENSOR_MESSAGE_RESULT,0,sizeof(SENSOR_MESSAGE_RESULT));
-
-		strcpy(SENSOR_MESSAGE,"\"NULL\"");
-
-		strcpy(SENSOR_MESSAGE_RESULT,"\"NULL\"");
-
-//
-
 		UART_Write(UART2,"\r\n",strlen("\r\n"));
 
 		memset(data_send_buffer,0,sizeof(data_send_buffer));
 }
 void check_receive_packet()
 {
-	if (WLC.SOF == '%') {
-				crc_rec = crc_calcul(Rec_cpy, sizeof(WLC_t) - 2);
+	if (WLC1.SOF == '%') {
+				crc_rec = crc_calcul(Rec_cpy, sizeof(WLC1_t) - 2);
 				RFM = crc_rec;
 	//			crc_rec = crc_rec >> 8;
 	//			crc_rec |= RFM << 8;
-				memset(fuel_sensor_buff,0,sizeof(fuel_sensor_buff));
-				if (crc_rec == WLC.crc){
-					if (WLC.Destination == CONTROL_PANEL) {
+//				memset(fuel_sensor_buff,0,sizeof(fuel_sensor_buff));
+				if (crc_rec == WLC1.crc){
+					if (WLC1.Destination == CONTROL_PANEL) {
 				{
 //					count_1=0;
 //					UART_Write(UART1, "AT+CCLK?\r\n", strlen("AT+CCLK?\r\n"));
 					  memset(fuel_sensor_buff,0,sizeof(fuel_sensor_buff));
-						switch (WLC.Data)
+						switch (WLC1.Data)
 						{
 						case (CAP_STATUS):
-						if ((WLC.Value[0]) == OPEN_CAP)
+						if ((WLC1.Value[0]) == OPEN_CAP)
 						{
 						 BEEP_ON;
 
@@ -2748,16 +2797,16 @@ void check_receive_packet()
 						strcat(fuel_sensor_buff,"\n");
 						strcat(fuel_sensor_buff,"Alert:");
 						strcat(fuel_sensor_buff," Fuel Tank Cap Open");
-						strcpy(SENSOR_MESSAGE_RESULT,"\"Fuel_Tank_Cap_Open\"");
+						strcpy(SENSOR_MESSAGE_RESULT,"Fuel_Tank_Cap_Open");
 						strcat(fuel_sensor_buff,"\n");
 						strcat(fuel_sensor_buff,"Fuel Tank Capacity:");
-						strcat(fuel_sensor_buff,WLC.Value+1);
+						strcat(fuel_sensor_buff,WLC1.Value+1);
 						strcat(fuel_sensor_buff,"L");
 						strcat(fuel_sensor_buff,"\n");
 //						memcnpy(Message_r,"Fuel Tank Cap Open",sizeof("Fuel Tank Cap Open"));
 //						send_data=1;
 						}
-						if ((WLC.Value[0]) == CLOSE_CAP)
+						if ((WLC1.Value[0]) == CLOSE_CAP)
 						{
 						 BEEP_OFF;
 						 strcpy(SENSOR_MESSAGE,"\"FUEL_TANK_TOUCHED\"");
@@ -2779,10 +2828,10 @@ void check_receive_packet()
 							strcat(fuel_sensor_buff,"\n");
 //							strcat(fuel_sensor_buff,"Alert:");
 							strcat(fuel_sensor_buff,"Alert: Fuel Tank Cap Closed");
-							strcpy(SENSOR_MESSAGE_RESULT,"\"Fuel_Tank_Cap_Closed\"");
+							strcpy(SENSOR_MESSAGE_RESULT,"Fuel_Tank_Cap_Closed");
 							strcat(fuel_sensor_buff,"\n");
 							strcat(fuel_sensor_buff,"Fuel Tank Capacity:");
-							strcat(fuel_sensor_buff,WLC.Value+1);
+							strcat(fuel_sensor_buff,WLC1.Value+1);
 							strcat(fuel_sensor_buff,"L");
 							strcat(fuel_sensor_buff,"\n");
 
@@ -2812,7 +2861,7 @@ void check_receive_packet()
 //
 //						strcat(fuel_sensor_buff,"\n");
 //						strcat(fuel_sensor_buff,"Battery level=");
-//						strcat(fuel_sensor_buff,WLC.Value/*value*/);
+//						strcat(fuel_sensor_buff,WLC1.Value/*value*/);
 //						strcat(fuel_sensor_buff,"\n");
 ////						strcat(fuel_sensor_buff,"Date:");
 ////						year_buffer[sizeof(year_buffer)] ='\0';
@@ -2849,17 +2898,17 @@ void check_receive_packet()
 
 						strcat(fuel_sensor_buff,"Fuel added:");
 
-						 ptr = strchr((char *)WLC.Value, 'F');
+						 ptr = strchr((char *)WLC1.Value, 'F');
 
 						if (ptr != NULL)
 						{
-						    size_t len = ptr -(char *) WLC.Value;
+						    size_t len = ptr -(char *) WLC1.Value;
 
 						    // Prevent buffer overflow
 							if (len >= sizeof(before_f))
 							len = sizeof(before_f) - 1;
 
-						    memcpy(before_f, WLC.Value, len);
+						    memcpy(before_f, WLC1.Value, len);
 						    before_f[len] = '\0';
 
 						    strcpy(after_f, ptr + 1);
@@ -2873,10 +2922,10 @@ void check_receive_packet()
 						strcat(fuel_sensor_buff,"Fuel Tank Capacity:");
 						strcat(fuel_sensor_buff,after_f);
 						strcat(fuel_sensor_buff,"L");
-						strcpy(SENSOR_MESSAGE_RESULT,DBQUOTE);
-						strcat(SENSOR_MESSAGE_RESULT,after_f);
+//						strcpy(SENSOR_MESSAGE_RESULT,DBQUOTE);
+						strcpy(SENSOR_MESSAGE_RESULT,before_f);
 						strcat(SENSOR_MESSAGE_RESULT,"L");
-						strcat(SENSOR_MESSAGE_RESULT,DBQUOTE);
+//						strcat(SENSOR_MESSAGE_RESULT,DBQUOTE);
 //						strcat(fuel_sensor_buff,"400 L");
 						strcat(fuel_sensor_buff,"\n");
 
@@ -2885,7 +2934,7 @@ void check_receive_packet()
 //
 //						strcat(fuel_sensor_buff,"\n");
 //						strcat(fuel_sensor_buff,"Flow Sensor Count=");
-//						strcat(fuel_sensor_buff,WLC.Value/*value*/);
+//						strcat(fuel_sensor_buff,WLC1.Value/*value*/);
 //						strcat(fuel_sensor_buff,"\n");
 ////						strcat(fuel_sensor_buff,"Date:");
 ////						year_buffer[sizeof(year_buffer)] ='\0';
@@ -2908,7 +2957,7 @@ void check_receive_packet()
 ////
 ////						strcat(fuel_sensor_buff,"\n");
 ////						strcat(fuel_sensor_buff,"Fuel level=");
-////						strcat(fuel_sensor_buff,WLC.Value/*value*/);
+////						strcat(fuel_sensor_buff,WLC1.Value/*value*/);
 ////						strcat(fuel_sensor_buff,"L");
 ////						strcat(fuel_sensor_buff,"\n");
 //////						strcat(fuel_sensor_buff,"Date:");
@@ -2922,9 +2971,9 @@ void check_receive_packet()
 ////						send_data=1;
 //							break;
 						case (THAFT):
-					   if(knotspeed<=5)
+//					   if(knotspeed<=5)
 						{
-		                BEEP_ON;
+
 
 //						PWM_Start(PWM0, 0x28);
 //		                buzzeR_sound=1;
@@ -2933,6 +2982,43 @@ void check_receive_packet()
 
 //		                strncpy(fuel_sensor_buff,"Disel Theft Alert",sizeof("Disel Theft Alert"));
 //		                strcat(fuel_sensor_buff,"\n");
+
+		                if(WLC1.Value[0]==99)
+					{
+						strncpy(fuel_sensor_buff,"Date:",strlen("Date:"));
+						year_buffer[sizeof(year_buffer)-1] ='\0';
+						strcat(fuel_sensor_buff,year_buffer);
+						strcat(fuel_sensor_buff,"Time:");
+						time_buffer[sizeof(time_buffer)-1]='\0';
+						strcat(fuel_sensor_buff,time_buffer);
+						strcat(fuel_sensor_buff,"\n");
+
+						recived_lorry_number[sizeof(recived_lorry_number) - 1] = '\0';
+						strcat(fuel_sensor_buff, recived_lorry_number);
+
+						strcat(fuel_sensor_buff,"\n");
+						strcat(fuel_sensor_buff,"Alert:");
+						strcat(fuel_sensor_buff," Diesel After Theft");
+						strcpy(SENSOR_MESSAGE,"\"DIESEL_AFTER_THEFT\"");
+						strcat(fuel_sensor_buff,"\n");
+						strcat(fuel_sensor_buff,"Device Mobile No:");
+						recived_mobile_number[sizeof(recived_mobile_number)-1]='\0';
+						strcat(fuel_sensor_buff, recived_mobile_number);
+						strcat(fuel_sensor_buff,"\n");
+
+						strcat(fuel_sensor_buff,"Fuel Theft Capacity:");
+						strcat(fuel_sensor_buff,WLC1.Value);
+//						strcpy(SENSOR_MESSAGE_RESULT,DBQUOTE);
+						strcpy(SENSOR_MESSAGE_RESULT,WLC1.Value+1);
+						strcat(SENSOR_MESSAGE_RESULT,"L");
+//						strcat(SENSOR_MESSAGE_RESULT,DBQUOTE);
+						strcat(fuel_sensor_buff,"L");
+						strcat(fuel_sensor_buff,"\n");
+					}
+		                else
+		                {
+
+		                	BEEP_ON;
 						strncpy(fuel_sensor_buff,"Date:",strlen("Date:"));
 						year_buffer[sizeof(year_buffer)-1] ='\0';
 						strcat(fuel_sensor_buff,year_buffer);
@@ -2955,19 +3041,21 @@ void check_receive_packet()
 						strcat(fuel_sensor_buff,"\n");
 
 						strcat(fuel_sensor_buff,"Fuel Tank Capacity:");
-						strcat(fuel_sensor_buff,WLC.Value+1);
-						strcpy(SENSOR_MESSAGE_RESULT,DBQUOTE);
-						strcat(SENSOR_MESSAGE_RESULT,WLC.Value+1);
+						strcat(fuel_sensor_buff,WLC1.Value+1);
+//						strcpy(SENSOR_MESSAGE_RESULT,DBQUOTE);
+						strcpy(SENSOR_MESSAGE_RESULT,"0.0");
 						strcat(fuel_sensor_buff,"L");
-						strcat(SENSOR_MESSAGE_RESULT,DBQUOTE);
+//						strcat(SENSOR_MESSAGE_RESULT,DBQUOTE);
 						strcat(fuel_sensor_buff,"\n");
 
 
+
+						}
 //		            	strncpy(fuel_sensor_buff, recived_lorry_number, sizeof(recived_lorry_number));
 //		            	fuel_sensor_buff[sizeof(fuel_sensor_buff)-1] = '\0';
 //						strcat(fuel_sensor_buff,"\n");
 //		                strcat(fuel_sensor_buff,"DROP:");
-//		                strcat(fuel_sensor_buff,WLC.Value/*value*/);
+//		                strcat(fuel_sensor_buff,WLC1.Value/*value*/);
 //		                strcat(fuel_sensor_buff," ");
 //		                strcat(fuel_sensor_buff,"Phone:+");
 ////		                strcat(fuel_sensor_buff,recived_mobile_number);
@@ -3009,11 +3097,11 @@ void check_receive_packet()
 					   strcpy(SENSOR_MESSAGE,"\"FUEL_TANK_TOUCHED\"");
 					   strcat(fuel_sensor_buff,"\n");
 					   strcat(fuel_sensor_buff,"Fuel Tank Capacity:");
-					   strcat(fuel_sensor_buff,WLC.Value+1);
-					   strcpy(SENSOR_MESSAGE_RESULT,DBQUOTE);
-					   strcat(SENSOR_MESSAGE_RESULT,WLC.Value+1);
+					   strcat(fuel_sensor_buff,WLC1.Value+1);
+//					   strcpy(SENSOR_MESSAGE_RESULT,DBQUOTE);
+					   strcpy(SENSOR_MESSAGE_RESULT,WLC1.Value+1);
 					   strcat(SENSOR_MESSAGE_RESULT,"L");
-					   strcat(SENSOR_MESSAGE_RESULT,DBQUOTE);
+//					   strcat(SENSOR_MESSAGE_RESULT,DBQUOTE);
 					   strcat(fuel_sensor_buff,"\n");
 
 ////		           strncpy (fuel_sensor_buff, "Diesel Tank Person Detected\n",sizeof("Diesel Tank Person Detected\n"));
@@ -3024,6 +3112,10 @@ void check_receive_packet()
 					    break;
 
 			           case (BATTERY_SATUS):
+		                BEEP_ON;
+			           battery_test=0;
+			           batter_timer=0;
+			           timer_counter=0;
 //	    	            strncpy(fuel_sensor_buff,"Battery Theft /Removal Alert",sizeof("Battery Theft /Removal Alert"));
 //						strcat(fuel_sensor_buff,"\n");
 		                strncpy(fuel_sensor_buff,"Date:",strlen("Date:"));
@@ -3047,12 +3139,12 @@ void check_receive_packet()
 						strcat(fuel_sensor_buff, recived_mobile_number);
 						strcat(fuel_sensor_buff,"\n");
 //						strcat(fuel_sensor_buff,"Fuel Tank Capacity:");
-//						strcat(fuel_sensor_buff,WLC.Value+1);
+//						strcat(fuel_sensor_buff,WLC1.Value+1);
 //						strcat(fuel_sensor_buff,"L");
 //						strcat(fuel_sensor_buff,"\n");
 			           break;
 
-			           case(AFTER_THAFT):
+			           case(DAT):
 //		                strncpy(fuel_sensor_buff,"After_Theft_Disel Theft Alert",sizeof("After_Disel Theft Alert"));
 //						strcat(fuel_sensor_buff,"\n");
 		                strncpy(fuel_sensor_buff,"Date:",strlen("Date:"));
@@ -3077,11 +3169,11 @@ void check_receive_packet()
 						strcat(fuel_sensor_buff,"\n");
 
 						strcat(fuel_sensor_buff,"Fuel Theft Capacity:");
-						strcat(fuel_sensor_buff,WLC.Value+1);
-						strcpy(SENSOR_MESSAGE_RESULT,DBQUOTE);
-						strcat(SENSOR_MESSAGE_RESULT,WLC.Value+1);
+						strcat(fuel_sensor_buff,WLC1.Value);
+//						strcpy(SENSOR_MESSAGE_RESULT,DBQUOTE);
+						strcpy(SENSOR_MESSAGE_RESULT,WLC1.Value);
 						strcat(SENSOR_MESSAGE_RESULT,"L");
-						strcat(SENSOR_MESSAGE_RESULT,DBQUOTE);
+//						strcat(SENSOR_MESSAGE_RESULT,DBQUOTE);
 						strcat(fuel_sensor_buff,"L");
 						strcat(fuel_sensor_buff,"\n");
 			           break;
@@ -3090,7 +3182,7 @@ void check_receive_packet()
 					   break;
 						}
 
-						memset(&WLC, 0, sizeof(WLC_t));
+						memset(&WLC1, 0, sizeof(WLC1_t));
 						message_sending=1;
 //						gps_data_send_sms();
 //						if(send_data)
@@ -3105,7 +3197,7 @@ void check_receive_packet()
 //						gnss_lon[sizeof(gnss_lon)-1]='\0';
 //						strcat(fuel_sensor_buff, gnss_lon);
 //						sensor_data_sending_to_sms();
-//					    memset(&WLC, 0, sizeof(WLC_t));
+//					    memset(&WLC1, 0, sizeof(WLC1_t));
 
 
 //						strcat(fuel_sensor_buff,"\n");
@@ -3131,11 +3223,12 @@ void check_receive_packet()
 }
 void panic_alert()
 {
-
+	BEEP_ON;
 //	 memcpy(fuel_sensor_buff,recived_lorry_number,13);
 
 //	       strncpy(fuel_sensor_buff,"Panic Alert",sizeof("Panic Alert"));
 //	       strcat(fuel_sensor_buff,"\n");
+	       memset(fuel_sensor_buff,0,sizeof(fuel_sensor_buff));
 		   strncpy(fuel_sensor_buff,"Date:",strlen("Date:"));
 		   year_buffer[sizeof(year_buffer)-1] ='\0';
 		   strcat(fuel_sensor_buff,year_buffer);
@@ -3150,14 +3243,14 @@ void panic_alert()
 		   strcat(fuel_sensor_buff,"\n");
 		   strcat(fuel_sensor_buff,"Alert: Panic! Immediate Assistance Required");
 		   strcpy(SENSOR_MESSAGE,"\"PANIC_ALERT\"");
-		   strcpy(SENSOR_MESSAGE_RESULT,"\"Immediate_Assistance_Required\"");
+		   strcpy(SENSOR_MESSAGE_RESULT,"Immediate_Assistance_Required");
 		   strcat(fuel_sensor_buff,"\n");
 		   strcat(fuel_sensor_buff,"Device Mobile No:");
 		   recived_mobile_number[sizeof(recived_mobile_number)-1]='\0';
 		   strcat(fuel_sensor_buff, recived_mobile_number);
 //		   strcat(fuel_sensor_buff,"\n");
 //		   strcat(fuel_sensor_buff,"Fuel Tank Capacity:");
-//		   strcat(fuel_sensor_buff,WLC.Value+1);
+//		   strcat(fuel_sensor_buff,WLC1.Value+1);
 //		   strcat(fuel_sensor_buff,"L");
 		   strcat(fuel_sensor_buff,"\n");
 		   message_sending=1;
@@ -3201,6 +3294,8 @@ void sensor_data_sending_to_sms()
 {
 
 	sms_call_chek=1;
+//
+//	TIMER_DisableInt(TIMER1);
 
 //	UART_Write(UART1, "AT+CMGF=1\r\n", strlen("AT+CMGF=1\r\n"));
 //		UART_Write(UART1, DBQUOTE, 1);
@@ -3234,7 +3329,7 @@ void sensor_data_sending_to_sms()
 //	UART_Write(UART1,fuel_sensor_buff +1, strlen(fuel_sensor_buff+1));
 
 
-	memset(fuel_sensor_buff,0,sizeof(fuel_sensor_buff));
+//	memset(fuel_sensor_buff,0,sizeof(fuel_sensor_buff));
 
 
 	sms_call_chek=0;
@@ -3243,343 +3338,343 @@ void sensor_data_sending_to_sms()
 
 }
 
-void get_gps_data()
-{
-	UART_Write_main(UART2,"\r\n", 2);
-
-	memset(lat_deg,0,2);
-	memset(lat_min,0,2);
-
-	memset(LAT_min,0,10);
-
-	memset(minLat,0,sizeof(minLat));
-	memset(minLong,0,sizeof(minLong));
-
-
-	memset(lat_sec,0,sizeof(lat_sec));
-	memset(long_deg,0,sizeof(long_deg));
-	memset(long_min,0,sizeof(long_min));
-
-	memset(LONG_min,0,10);
-
-	memset(long_sec,0,sizeof(long_sec));
-	memset(secLatUStr,0,sizeof(secLatUStr));
-	memset(secLatLStr,0,sizeof(secLatLStr));
-	memset(secLongUStr,0,sizeof(secLongUStr));
-	memset(secLongLStr,0,sizeof(secLongLStr));
-
-
-	rtc = strstr(GPS_data,",");
-	gpsStatus = strstr(rtc +1,",");
-
-	//if gpsSatus is invalid, dont use the data, skip
-
-	if(strncmp(gpsStatus + 1, "A",1) == 0) // valid gps data continue
-	{
-		latitude = strstr(gpsStatus +1,",");
-		strncpy(lat_deg, latitude+1, 2);
-		strncpy(lat_min, latitude+3, 2);
-		strncpy(lat_sec, latitude+6, 5);
-
-		strncpy(LAT_min,lat_min,2);
-		strcat(LAT_min,lat_sec);
-
-		LAT_min_l = atoi(LAT_min);
-		LAT_min_l = LAT_min_l * 100;
-		LAT_min_l = LAT_min_l/60;
-		itoa(LAT_min_l,LAT_min_cov,10);
-
-
-		minutes = atoi(lat_min);
-		minutes = (minutes*100)/60;
-		itoa(minutes,minLat,10);
-
-		seconds = atoi(lat_sec);
-		seconds = seconds *60;
-		secLatU = seconds/100000;
-		secLatL= seconds%100000;
-		itoa(secLatU,secLatUStr,10);
-		itoa(secLatL,secLatLStr, 10);
-		hem = strstr(latitude+1,",");
-
-		longitude = strstr(hem+1,",");
-		strncpy(long_deg, longitude+1, 3);
-		strncpy(long_min, longitude+4, 2);
-		strncpy(long_sec, longitude+7, 5);
-
-		strncpy(LONG_min,long_min,3);
-		strcat(LONG_min,long_sec);
-
-		LONG_min_l = atoi(LONG_min);
-		LONG_min_l = LONG_min_l * 100;
-		LONG_min_l = LONG_min_l/60;
-		itoa(LONG_min_l,LONG_min_cov,10);
-
-
-
-		minutes = atoi(long_min);
-		minutes = (minutes * 100)/60;
-		itoa(minutes,minLong,10);
-
-		secondsLong = atoi(long_sec);
-		secondsLong = secondsLong *60;
-		secLongU = secondsLong/100000;
-		secLongL= secondsLong%100000;
-		itoa(secLongU,secLongUStr,10);
-		itoa(secLongL,secLongLStr, 10);
-
-		ew = strstr(longitude+1,",");
-		Speed = strstr(ew +1,",");
-		cog = strstr(Speed+1,",");
-		date = strstr(cog+1,",");
-		mv = strstr(date+1,",");
-
-		UART_Write_main(UART2,"\r\n\r\n:", 4);
-		UART_Write_main(UART2,"---------------\r\n", 17);
-		UART_Write_main(UART2,"    GPD DATA   \r\n", 17);
-		UART_Write_main(UART2,"---------------\r\n", 17);
-
-		UART_Write_main(UART2,"TIME:", 5);
-
-		if(gpsStatus > rtc)
-		{
-			UART_Write_main(UART2, rtc+1, gpsStatus - rtc - 1);
-			memset(gpsTimeData,0,API_BUFF_LEN);
-			strncpy(gpsTimeData,rtc+1, gpsStatus - rtc - 1);
-		}
-		UART_Write_main(UART2,"\r\n", 2);
-
-		UART_Write_main(UART2,"Status:", 7);
-
-		if(latitude > gpsStatus)
-		{
-			UART_Write_main(UART2, gpsStatus+1, latitude - gpsStatus - 1);
-		}
-		UART_Write_main(UART2,"\r\n", 2);
-
-		UART_Write_main(UART2,"Latitude:", 9);
-
-		if(hem > latitude)
-		{
-
-			UART_Write_main(UART2, latitude+1, hem - latitude - 1);
-			memset(gpsLatitudeData,0,API_BUFF_LEN);
-			strncpy(gpsLatitudeData,latitude+1, hem - latitude - 1);
-		}
-		UART_Write_main(UART2,"\r\n", 2);
-
-		UART_Write_main(UART2,"Hemisphere:", 11);
-
-		if(longitude > hem)
-		{
-			UART_Write_main(UART2, hem+1, longitude - hem - 1);
-		}
-		UART_Write_main(UART2,"\r\n", 2);
-
-		UART_Write_main(UART2,"Longitude:", 10);
-		if(ew > longitude)
-		{
-
-			UART_Write_main(UART2, longitude+1, ew - longitude - 1);
-			memset(gpsLongitudeData,0,API_BUFF_LEN);
-			strncpy(gpsLongitudeData,longitude+1, ew - longitude - 1);
-
-		}
-		UART_Write_main(UART2,"\r\n", 2);
-
-		UART_Write_main(UART2,"EW:", 3);
-
-		if(Speed > ew)
-		{
-			UART_Write_main(UART2, ew+1, Speed - ew - 1);
-		}
-		UART_Write_main(UART2,"\r\n", 2);
-
-		UART_Write_main(UART2,"Speed:", 6);
-
-		if( cog > Speed)
-		{
-
-		 strncpy(fixed,Speed+1,4);
-
-		 knot=atoi(fixed);
-
-		 knotspeed=(knot)*(speeed);
-
-		itoa(knotspeed,Sped,10);
-
-		UART_Write_main(UART2, Speed+1, cog - Speed - 1);
-		//	UART_Write_main(UART2, Speed, 3);
-		memset(gpsSpeedData,0,API_BUFF_LEN);
-
-		strncpy(gpsSpeedData,Sped, cog - Speed - 1);
-	//	strncpy(gpsSpeedData,Speed+1, cog - Speed - 1);
-
-		}
-		UART_Write_main(UART2,"\r\n", 2);
-
-		UART_Write_main(UART2,"COG:", 4);
-		if( date > cog )
-		{
-			UART_Write_main(UART2, cog+1, date - cog - 1);
-		}
-		UART_Write_main(UART2,"\r\n", 2);
-
-		UART_Write_main(UART2,"Date:", 5);
-		if( mv > date)
-		{
-			UART_Write_main(UART2, date+1, mv - date - 1);
-			memset(gpsDateData,0,API_BUFF_LEN);
-			strncpy(gpsDateData,date+1, mv - date - 1);
-		}
-
-//		memset(testURL,0,BUF_LEN);
-
-		memset(sms_google_buffer,0,sizeof(sms_google_buffer));
-
-	  	memset(data_send_buffer,0,BUF_LEN);
-
-     memcpy(sms_google_buffer,google_map_url,sizeof(google_map_url));
-
-
-//	  	strcpy(data_send_buffer, "{");
-//	  	strcat(data_send_buffer, "\"");
-//	  	strcat(data_send_buffer, "type");
-//	  	strcat(data_send_buffer, "\"");
-//	  	strcat(data_send_buffer, "}");
-
-		 	strcat(data_send_buffer,"{");
-			strcat(data_send_buffer, "\"");
-
-		 	strcat(data_send_buffer,"type");
-
-			strcat(data_send_buffer, "\"");
-		 	strcat(data_send_buffer,":");
-		 	strcat(data_send_buffer," ");
-			strcat(data_send_buffer, "\"");
-		 	strcat(data_send_buffer,"FUEL_TOUCHED");
-			strcat(data_send_buffer, "\"");
-		 	strcat(data_send_buffer,",");
-
-//		 	strcat(sms_google_buffer,"\"");
-			strcat(data_send_buffer, "\"");
-			strcat(data_send_buffer,gpsLatitude);
-//			strcat(sms_google_buffer,gpsLatitude);
-//			strcat(sms_google_buffer,"\"");
-			strcat(data_send_buffer, "\"");
-			strcat(data_send_buffer,":");
-//			strcat(sms_google_buffer,":");
-
-
-
-				lat_dege=atoi(lat_deg);
-
-				 if((lat_dege>7) && (lat_dege<38))
-				 {
-				   strcat(data_send_buffer,lat_deg);
-
-				   strcat(sms_google_buffer,lat_deg);
-
-					strcat(data_send_buffer,".");
-
-					strcat(sms_google_buffer,".");
-
-					 strcat(data_send_buffer,LAT_min_cov);
-
-					 strcat(sms_google_buffer,LAT_min_cov);
-
-					   lat_dege=0;
-				 }
-				 strcat(data_send_buffer,",");
-
-				strcat(data_send_buffer, "\"");
-//				strcat(sms_google_buffer,"\"");
-				strcat(data_send_buffer,gpsLongitude);
-//				strcat(sms_google_buffer,gpsLongitude);
-				strcat(data_send_buffer, "\"");
-//				strcat(sms_google_buffer,"\"");
-				strcat(data_send_buffer,":");
-//				strcat(sms_google_buffer,":");
-
-				long_dege=atoi(long_deg);
-
-
-
-				 if((long_dege>60) && (long_dege<97))
-				 {
-					 strcat(sms_google_buffer,",");
-
-			         	strcat(data_send_buffer,long_deg+1);
-
-			         	strcat(sms_google_buffer,long_deg+1);
-
-			               	strcat(data_send_buffer,".");
-
-			            	strcat(sms_google_buffer,".");
-
-			              	strcat(data_send_buffer,LONG_min_cov);
-
-			              	strcat(sms_google_buffer,LONG_min_cov);
-
-					         long_dege=0;
-				    }
-
-
-				 strcat(data_send_buffer,"}");
-
-				 sizof_send_buffer_interger=strlen(data_send_buffer);
-
-			     itoa(sizof_send_buffer_interger,sizof_send_buffer,10);
-
-		dataUpdateReady = 1;
-
-		UART_Write_main(UART2,"\r\n\r\n", 4);
-		UART_Write_main(UART2,"/******************/\r\n", 22);
-		UART_Write_main(UART2,data_send_buffer,strlen(data_send_buffer));
-		UART_Write_main(UART2,"\r\n", 2);
-		UART_Write_main(UART2,"/******************/\r\n", 22);
-		UART_Write_main(UART2,"\r\n\r\n:", 4);
-   	//	BEEPER_ON;
-//		beep_on();
-//    	delayCounter = 20000;
-//    	delay_loop();
-//    	BEEPER_OFF;
-	//	if(date+1!=date_and_time)
-		{
-
-//			dates[0]=*(date+1);
-//			dates[1]=*(date+2);
-//			dates[2]= *(date+3);
-//			dates[3]= *(date+4);
-//			dates[4]= *(date+5);
-//			dates[5]= *(date+6);
-//
-//			memcpy(dates,(date+1),6);
-//
-////			dates[6]= *(rtc+1);
-////			dates[7]= *(rtc+2);
-////			dates[8]= *(rtc+3);
-////			dates[9]= *(rtc+4);
-////			dates[10]= *(rtc+5);
-////			dates[11]= *(rtc+6);
-//
-//		memcpy(dates+6,(rtc+1),4);
-
-		// date_and_time=atoi(times);
-
-//		send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,dates);
-
-	   // date_and_time=atoi(dates);
-
-	//    send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,date_and_time);
-
-	    send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,sms_google_buffer+29);
-
-
-		//send_data_and_time();
-		}
-	}
-}
+//void get_gps_data()
+////{
+////	UART_Write_main(UART2,"\r\n", 2);
+////
+////	memset(lat_deg,0,2);
+////	memset(lat_min,0,2);
+////
+////	memset(LAT_min,0,10);
+////
+////	memset(minLat,0,sizeof(minLat));
+////	memset(minLong,0,sizeof(minLong));
+////
+////
+////	memset(lat_sec,0,sizeof(lat_sec));
+////	memset(long_deg,0,sizeof(long_deg));
+////	memset(long_min,0,sizeof(long_min));
+////
+////	memset(LONG_min,0,10);
+////
+////	memset(long_sec,0,sizeof(long_sec));
+////	memset(secLatUStr,0,sizeof(secLatUStr));
+////	memset(secLatLStr,0,sizeof(secLatLStr));
+////	memset(secLongUStr,0,sizeof(secLongUStr));
+////	memset(secLongLStr,0,sizeof(secLongLStr));
+////
+////
+////	rtc = strstr(GPS_data,",");
+////	gpsStatus = strstr(rtc +1,",");
+////
+////	//if gpsSatus is invalid, dont use the data, skip
+////
+////	if(strncmp(gpsStatus + 1, "A",1) == 0) // valid gps data continue
+////	{
+////		latitude = strstr(gpsStatus +1,",");
+////		strncpy(lat_deg, latitude+1, 2);
+////		strncpy(lat_min, latitude+3, 2);
+////		strncpy(lat_sec, latitude+6, 5);
+////
+////		strncpy(LAT_min,lat_min,2);
+////		strcat(LAT_min,lat_sec);
+////
+////		LAT_min_l = atoi(LAT_min);
+////		LAT_min_l = LAT_min_l * 100;
+////		LAT_min_l = LAT_min_l/60;
+////		itoa(LAT_min_l,LAT_min_cov,10);
+////
+////
+////		minutes = atoi(lat_min);
+////		minutes = (minutes*100)/60;
+////		itoa(minutes,minLat,10);
+////
+////		seconds = atoi(lat_sec);
+////		seconds = seconds *60;
+////		secLatU = seconds/100000;
+////		secLatL= seconds%100000;
+////		itoa(secLatU,secLatUStr,10);
+////		itoa(secLatL,secLatLStr, 10);
+////		hem = strstr(latitude+1,",");
+////
+////		longitude = strstr(hem+1,",");
+////		strncpy(long_deg, longitude+1, 3);
+////		strncpy(long_min, longitude+4, 2);
+////		strncpy(long_sec, longitude+7, 5);
+////
+////		strncpy(LONG_min,long_min,3);
+////		strcat(LONG_min,long_sec);
+////
+////		LONG_min_l = atoi(LONG_min);
+////		LONG_min_l = LONG_min_l * 100;
+////		LONG_min_l = LONG_min_l/60;
+////		itoa(LONG_min_l,LONG_min_cov,10);
+////
+////
+////
+////		minutes = atoi(long_min);
+////		minutes = (minutes * 100)/60;
+////		itoa(minutes,minLong,10);
+////
+////		secondsLong = atoi(long_sec);
+////		secondsLong = secondsLong *60;
+////		secLongU = secondsLong/100000;
+////		secLongL= secondsLong%100000;
+////		itoa(secLongU,secLongUStr,10);
+////		itoa(secLongL,secLongLStr, 10);
+////
+////		ew = strstr(longitude+1,",");
+////		Speed = strstr(ew +1,",");
+////		cog = strstr(Speed+1,",");
+////		date = strstr(cog+1,",");
+////		mv = strstr(date+1,",");
+////
+////		UART_Write_main(UART2,"\r\n\r\n:", 4);
+////		UART_Write_main(UART2,"---------------\r\n", 17);
+////		UART_Write_main(UART2,"    GPD DATA   \r\n", 17);
+////		UART_Write_main(UART2,"---------------\r\n", 17);
+////
+////		UART_Write_main(UART2,"TIME:", 5);
+////
+////		if(gpsStatus > rtc)
+////		{
+////			UART_Write_main(UART2, rtc+1, gpsStatus - rtc - 1);
+////			memset(gpsTimeData,0,API_BUFF_LEN);
+////			strncpy(gpsTimeData,rtc+1, gpsStatus - rtc - 1);
+////		}
+////		UART_Write_main(UART2,"\r\n", 2);
+////
+////		UART_Write_main(UART2,"Status:", 7);
+////
+////		if(latitude > gpsStatus)
+////		{
+////			UART_Write_main(UART2, gpsStatus+1, latitude - gpsStatus - 1);
+////		}
+////		UART_Write_main(UART2,"\r\n", 2);
+////
+////		UART_Write_main(UART2,"Latitude:", 9);
+////
+////		if(hem > latitude)
+////		{
+////
+////			UART_Write_main(UART2, latitude+1, hem - latitude - 1);
+////			memset(gpsLatitudeData,0,API_BUFF_LEN);
+////			strncpy(gpsLatitudeData,latitude+1, hem - latitude - 1);
+////		}
+////		UART_Write_main(UART2,"\r\n", 2);
+////
+////		UART_Write_main(UART2,"Hemisphere:", 11);
+////
+////		if(longitude > hem)
+////		{
+////			UART_Write_main(UART2, hem+1, longitude - hem - 1);
+////		}
+////		UART_Write_main(UART2,"\r\n", 2);
+////
+////		UART_Write_main(UART2,"Longitude:", 10);
+////		if(ew > longitude)
+////		{
+////
+////			UART_Write_main(UART2, longitude+1, ew - longitude - 1);
+////			memset(gpsLongitudeData,0,API_BUFF_LEN);
+////			strncpy(gpsLongitudeData,longitude+1, ew - longitude - 1);
+////
+////		}
+////		UART_Write_main(UART2,"\r\n", 2);
+////
+////		UART_Write_main(UART2,"EW:", 3);
+////
+////		if(Speed > ew)
+////		{
+////			UART_Write_main(UART2, ew+1, Speed - ew - 1);
+////		}
+////		UART_Write_main(UART2,"\r\n", 2);
+////
+////		UART_Write_main(UART2,"Speed:", 6);
+////
+////		if( cog > Speed)
+////		{
+////
+////		 strncpy(fixed,Speed+1,4);
+////
+////		 knot=atoi(fixed);
+////
+////		 knotspeed=(knot)*(speeed);
+////
+////		itoa(knotspeed,Sped,10);
+////
+////		UART_Write_main(UART2, Speed+1, cog - Speed - 1);
+////		//	UART_Write_main(UART2, Speed, 3);
+////		memset(gpsSpeedData,0,API_BUFF_LEN);
+////
+////		strncpy(gpsSpeedData,Sped, cog - Speed - 1);
+////	//	strncpy(gpsSpeedData,Speed+1, cog - Speed - 1);
+////
+////		}
+////		UART_Write_main(UART2,"\r\n", 2);
+////
+////		UART_Write_main(UART2,"COG:", 4);
+////		if( date > cog )
+////		{
+////			UART_Write_main(UART2, cog+1, date - cog - 1);
+////		}
+////		UART_Write_main(UART2,"\r\n", 2);
+////
+////		UART_Write_main(UART2,"Date:", 5);
+////		if( mv > date)
+////		{
+////			UART_Write_main(UART2, date+1, mv - date - 1);
+////			memset(gpsDateData,0,API_BUFF_LEN);
+////			strncpy(gpsDateData,date+1, mv - date - 1);
+////		}
+////
+//////		memset(testURL,0,BUF_LEN);
+////
+////		memset(sms_google_buffer,0,sizeof(sms_google_buffer));
+////
+////	  	memset(data_send_buffer,0,BUF_LEN);
+////
+////     memcpy(sms_google_buffer,google_map_url,sizeof(google_map_url));
+////
+////
+//////	  	strcpy(data_send_buffer, "{");
+//////	  	strcat(data_send_buffer, "\"");
+//////	  	strcat(data_send_buffer, "type");
+//////	  	strcat(data_send_buffer, "\"");
+//////	  	strcat(data_send_buffer, "}");
+////
+////		 	strcat(data_send_buffer,"{");
+////			strcat(data_send_buffer, "\"");
+////
+////		 	strcat(data_send_buffer,"type");
+////
+////			strcat(data_send_buffer, "\"");
+////		 	strcat(data_send_buffer,":");
+////		 	strcat(data_send_buffer," ");
+////			strcat(data_send_buffer, "\"");
+////		 	strcat(data_send_buffer,"FUEL_TOUCHED");
+////			strcat(data_send_buffer, "\"");
+////		 	strcat(data_send_buffer,",");
+////
+//////		 	strcat(sms_google_buffer,"\"");
+////			strcat(data_send_buffer, "\"");
+////			strcat(data_send_buffer,gpsLatitude);
+//////			strcat(sms_google_buffer,gpsLatitude);
+//////			strcat(sms_google_buffer,"\"");
+////			strcat(data_send_buffer, "\"");
+////			strcat(data_send_buffer,":");
+//////			strcat(sms_google_buffer,":");
+////
+////
+////
+////				lat_dege=atoi(lat_deg);
+////
+////				 if((lat_dege>7) && (lat_dege<38))
+////				 {
+////				   strcat(data_send_buffer,lat_deg);
+////
+////				   strcat(sms_google_buffer,lat_deg);
+////
+////					strcat(data_send_buffer,".");
+////
+////					strcat(sms_google_buffer,".");
+////
+////					 strcat(data_send_buffer,LAT_min_cov);
+////
+////					 strcat(sms_google_buffer,LAT_min_cov);
+////
+////					   lat_dege=0;
+////				 }
+////				 strcat(data_send_buffer,",");
+////
+////				strcat(data_send_buffer, "\"");
+//////				strcat(sms_google_buffer,"\"");
+////				strcat(data_send_buffer,gpsLongitude);
+//////				strcat(sms_google_buffer,gpsLongitude);
+////				strcat(data_send_buffer, "\"");
+//////				strcat(sms_google_buffer,"\"");
+////				strcat(data_send_buffer,":");
+//////				strcat(sms_google_buffer,":");
+////
+////				long_dege=atoi(long_deg);
+////
+////
+////
+////				 if((long_dege>60) && (long_dege<97))
+////				 {
+////					 strcat(sms_google_buffer,",");
+////
+////			         	strcat(data_send_buffer,long_deg+1);
+////
+////			         	strcat(sms_google_buffer,long_deg+1);
+////
+////			               	strcat(data_send_buffer,".");
+////
+////			            	strcat(sms_google_buffer,".");
+////
+////			              	strcat(data_send_buffer,LONG_min_cov);
+////
+////			              	strcat(sms_google_buffer,LONG_min_cov);
+////
+////					         long_dege=0;
+////				    }
+////
+////
+////				 strcat(data_send_buffer,"}");
+////
+////				 sizof_send_buffer_interger=strlen(data_send_buffer);
+////
+////			     itoa(sizof_send_buffer_interger,sizof_send_buffer,10);
+////
+////		dataUpdateReady = 1;
+////
+////		UART_Write_main(UART2,"\r\n\r\n", 4);
+////		UART_Write_main(UART2,"/******************/\r\n", 22);
+////		UART_Write_main(UART2,data_send_buffer,strlen(data_send_buffer));
+////		UART_Write_main(UART2,"\r\n", 2);
+////		UART_Write_main(UART2,"/******************/\r\n", 22);
+////		UART_Write_main(UART2,"\r\n\r\n:", 4);
+////   	//	BEEPER_ON;
+//////		beep_on();
+//////    	delayCounter = 20000;
+//////    	delay_loop();
+//////    	BEEPER_OFF;
+////	//	if(date+1!=date_and_time)
+////		{
+////
+//////			dates[0]=*(date+1);
+//////			dates[1]=*(date+2);
+//////			dates[2]= *(date+3);
+//////			dates[3]= *(date+4);
+//////			dates[4]= *(date+5);
+//////			dates[5]= *(date+6);
+//////
+//////			memcpy(dates,(date+1),6);
+//////
+////////			dates[6]= *(rtc+1);
+////////			dates[7]= *(rtc+2);
+////////			dates[8]= *(rtc+3);
+////////			dates[9]= *(rtc+4);
+////////			dates[10]= *(rtc+5);
+////////			dates[11]= *(rtc+6);
+//////
+//////		memcpy(dates+6,(rtc+1),4);
+////
+////		// date_and_time=atoi(times);
+////
+//////		send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,dates);
+////
+////	   // date_and_time=atoi(dates);
+////
+////	//    send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,date_and_time);
+////
+//////	    send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,sms_google_buffer+29);
+////
+////
+////		//send_data_and_time();
+////		}
+////	}
+//}
 void send_data_and_time()
 {
 	send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,date_and_time);
@@ -3716,14 +3811,14 @@ void date_time_function()
 
 		if(date_and_time_pointer == NULL)
 			{
-			    return;     // Invalid response
+			    return 0;     // Invalid response
 			}
 
 		 date_and_time_pointer = strstr(date_and_time_pointer, "\"");
 
 		 if(date_and_time_pointer == NULL)
 		 {
-		     return;
+		     return 0;
 		 }
 
 	    if(date_and_time_pointer != NULL)
@@ -3733,7 +3828,7 @@ void date_time_function()
 	         token = strtok(date_and_time_pointer, ",");
 
 	         if(token == NULL)
-	        	 return;
+	        	 return 0;
 
 	         if(token != NULL)
 	           strncpy(year_buffer, token,sizeof(year_buffer));
@@ -3741,7 +3836,7 @@ void date_time_function()
 	         token = strtok(NULL, "+");
 
 	         if(token == NULL)
-	        	   return;
+	        	   return 0;
 
 	          if(token != NULL)
 	            strncpy(time_buffer, token,sizeof(time_buffer));
@@ -3750,8 +3845,11 @@ void date_time_function()
 	          strcat((char *)datetime, " ");
 	          strcat((char *)datetime, (char *)time_buffer);
 
-
-//	          send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,datetime);
+	          if(send_counter>10)
+	          {
+	          send(FUEL_SENSOR,CONTROL_PANEL,FUEL_SENSOR_ID,CONTROL_PANEL_ID,CAP_STATUS,datetime);
+	          send_counter=0;
+	          }
 	    }
 
 	}
@@ -4095,7 +4193,10 @@ void int_and_ext_battery_percentges()
 
    if ((extBatt_V <= 600) && (battery_sms_sent == 0))
    {
+	   batter_timer=1;
+	   battery_test=1;
 	   battery_sms_sent = 1;
+	   timer_counter=0;
 //       send_sms_battery();
 
    }
@@ -4112,6 +4213,7 @@ void  send_sms_battery()
 
 //    strncpy(fuel_sensor_buff,"Battery Theft /Removal Alert",sizeof("Battery Theft /Removal Alert"));
 //				strcat(fuel_sensor_buff,"\n");
+	           memset(fuel_sensor_buff,0,sizeof(fuel_sensor_buff));
 				strncpy(fuel_sensor_buff,"Date:",strlen("Date:"));
 				year_buffer[sizeof(year_buffer)-1] ='\0';
 				strcat(fuel_sensor_buff,year_buffer);
@@ -4132,7 +4234,7 @@ void  send_sms_battery()
 				strcat(fuel_sensor_buff, recived_mobile_number);
 				strcat(fuel_sensor_buff,"\n");
 				strcat(fuel_sensor_buff,"Fuel Tank Capacity:");
-				strcat(fuel_sensor_buff,WLC.Value+1);
+				strcat(fuel_sensor_buff,WLC1.Value+1);
 				strcat(fuel_sensor_buff,"L");
 				strcat(fuel_sensor_buff,"\n");
 
@@ -4155,7 +4257,7 @@ void  send_sms_battery()
 }
 void gps_data_send_sms()
 {
-	GET_GNSS_data();
+//	GET_GNSS_data();
 
 	strcat(fuel_sensor_buff,"https://www.google.com/maps?q=");
     gnss_lat[sizeof(gnss_lat)-1]='\0';

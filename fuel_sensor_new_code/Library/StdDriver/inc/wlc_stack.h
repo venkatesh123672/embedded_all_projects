@@ -20,7 +20,7 @@ WLC_t   WLC;
 ** Destination and Destination ID                **
 ********************************************************************/
 #define  CONTROL_PANEL			        	    30
-#define  CONTROL_PANEL_ID			        	143
+#define  CONTROL_PANEL_ID			        	0x2424
 #define  SOURCEID                                555
 /*******************************************************************
 ** Destination Device Address              **
@@ -41,7 +41,7 @@ enum
 ********************************************************************/
 enum
 {
-	OPEN_CAP=0x70,
+	OPEN_CAP=0x50,
 	CLOSE_CAP,
 	CAP_STATUS,
 	BATTERY_VALUE,
@@ -57,6 +57,25 @@ enum
 //void send(uint8_t source,uint8_t Dest, uint16_t sourId,uint16_t DestId,uint8_t Data);
 //uint16_t CRC(uint8_t buf[], int len);
 
+
+enum
+{
+	DAT=0X025
+};
+
+#pragma pack(1)
+typedef struct
+{
+	uint8_t SOF;
+	uint8_t Source;
+	uint8_t Destination;
+	uint16_t sourceId;
+	uint16_t DestId;
+	uint8_t  Data;
+	uint8_t Value[SIZEOFVALUE];
+    uint16_t crc;
+} WLC1_t;
+WLC1_t   WLC1;
 
 #endif /* STDDRIVER_INC_WLC_STACK_H_ */
 

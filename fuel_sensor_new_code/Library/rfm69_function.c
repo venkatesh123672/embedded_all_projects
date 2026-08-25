@@ -240,7 +240,7 @@ void SendRfFrame(uint8_t *buffer, uint8_t size, uint8_t *pReturnCode)
 //	TIMER_Delay(TIMER0,59900);
 //	TIMER_Delay(TIMER0,999995);
 	 while (!(ReadRegister(REG_IRQFLAGS2) & RF_IRQFLAGS2_PACKETSENT));//
-
+	 while (!(ReadRegister(REG_IRQFLAGS2) & RF_IRQFLAGS2_PACKETSENT));//
 //	do {
 //	} while ((ReadRegister(REG_PALEVEL) & RF_DIOMAPPING1_DIO0_00)); // Wait for Packet sent
 
