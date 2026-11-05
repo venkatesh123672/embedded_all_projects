@@ -135,6 +135,7 @@
 #define REG_TEMP2					               0x4F
 
 #define REG_TESTLNA                      0x58
+#define REG_TESTDAGC                     0x6F
 #define REG_TESTPA1                      0x5A
 #define REG_TESTPA2                      0x5C
 /*******************************************************************
@@ -947,7 +948,7 @@
 // RegDioMapping1
 #define RF_DIOMAPPING1_DIO0_00                      0x00  // Default
 #define RF_DIOMAPPING1_DIO0_01                      0x40
-#define RF_DIOMAPPING1_DIO0_10          			    	0x80
+#define RF_DIOMAPPING1_DIO0_10          			0x80
 #define RF_DIOMAPPING1_DIO0_11                      0xC0
 
 #define RF_DIOMAPPING1_DIO1_00                      0x00  // Default
@@ -1169,5 +1170,7 @@
 
 
 
+
+void InitRFChipRx(void);
 
 #endif /* STDDRIVER_INC_RFM69_REGISTOR_H_ */

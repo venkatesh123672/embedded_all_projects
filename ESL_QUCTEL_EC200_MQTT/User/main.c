@@ -40,6 +40,7 @@
 #define   WAKE_UP_BUF_SIZE     50
 
 #define   MQTT_STRING_BUFFER          256
+#define   NO_OF_BYTE_PER_PACKET 10
 
 #define vechicle_data_flash_addres 0xA3F0
 
@@ -77,6 +78,9 @@ void mqtt_recevide_http_dont_bin_file();
 uint32_t UART_Write_main(UART_T *, uint8_t *,uint32_t );
 void send_image_packet(void);
 void mqtt_recevied_data();
+static void tick_start(void);
+static void send_test_packet(void);
+static void back_to_rx(void);
 
 void loop_delay(uint8_t loopDel);
 void delay_loop();
@@ -105,6 +109,13 @@ char pay_load_buffer[MQTT_STRING_BUFFER];
 
 uint8_t display_buffer[MQTT_DISPLAY_SIZE];
 uint8_t display_chek=1;
+uint16_t  no_of_times_send=(4750/10);
+uint8_t   test_send=0;
+uint16_t  send_number_of_byte=0;
+static uint16_t tx_seq = 1;
+static uint32_t tick_per_ms;
+static uint8_t fifo_overrun_acted;
+
 
 uint16_t  pay_load_size=0;
 uint8_t   pay_load_size_buffer[10];
@@ -584,15 +595,25 @@ uint16_t crc_calcul(uint8_t buf[], int len)
   crc = crcHigh | crcLow;
   return crc;
 }
-void SPI_Init(void)
-{
-    /* Configure as a master, clock idle low, 32-bit transaction, drive output on falling clock edge and latch input on rising edge. */
-    /* Set IP clock divider. SPI clock rate = 2MHz */
-    SPI_Open(SPI0, SPI_MASTER, SPI_MODE_0, 8, 1600000);
+//void SPI_Init(void)
+//{
+//    /* Configure as a master, clock idle low, 32-bit transaction, drive output on falling clock edge and latch input on rising edge. */
+//    /* Set IP clock divider. SPI clock rate = 2MHz */
+//    SPI_Open(SPI0, SPI_MASTER, SPI_MODE_0, 8, 1600000);
+//
+//    SPI_SetFIFO(SPI0, 0, 0);
+//    SPI_EnableInt(SPI0, SPI_FIFO_RXTH_INT_MASK );
+//    NVIC_EnableIRQ(SPI0_IRQn);
+//
+//}
+void SPI0_Init(void) {
+	/* Configure as a master, clock idle low, 32-bit transaction, drive output on falling clock edge and latch input on rising edge. */
+	/* Set IP clock divider. SPI clock rate = 2MHz */
+	SPI_Open(SPI0, SPI_MASTER, SPI_MODE_0, 8, 1000000);
 
-    SPI_SetFIFO(SPI0, 0, 0);
-    SPI_EnableInt(SPI0, SPI_FIFO_RXTH_INT_MASK );
-    NVIC_EnableIRQ(SPI0_IRQn);
+	SPI_SetFIFO(SPI0, 0, 0);
+//	SPI_EnableInt(SPI0, SPI_FIFO_RXTH_INT_MASK);
+//	NVIC_EnableIRQ(SPI0_IRQn);
 
 }
 /*---------------------------------------------------------------------------------------------------------*/
@@ -634,34 +655,56 @@ void TMR1_IRQHandler(void)
 
 	}
 }
-/* GPIO pin(DIO0) interrupt used for send and receive  */
-void GPCDEF_IRQHandler(void)
-{
 
-    if(GPIO_GET_INT_FLAG(PD, BIT3))
-    {
-       GPIO_CLR_INT_FLAG(PD, BIT3);
- 	   if(PD3)
- 		{
-			RFState |= RF_RX_DONE;
-			RFState &= ~RF_BUSY;
-			if(txFlag)
-			{
-				txFlag=0;
-				recFlag=0;
+/*---------------------------------------------------------------------------------------------------------*/
+/* Init SPI0 Interrupt Handler                                                                                                */
+/*---------------------------------------------------------------------------------------------------------*/
+void EINT135_IRQHandler(void)
+{
+	if (GPIO_GET_INT_FLAG(PD, BIT3)) {
+		GPIO_CLR_INT_FLAG(PD, BIT3);
+		/* Rising edge only. DIO0 mapping 00 = PayloadReady. Never clear RX_DONE on fall. */
+		if (PD3) {
+			if (txFlag) {
+				txFlag = 0;
+			} else {
+				RFState |= RF_RX_DONE;
+				RFState &= ~RF_BUSY;
+				recFlag = 1;
 			}
-			else
-			{
-				recFlag=1;
-			}
- 		}
- 		else
- 		{
-			RFState |= RF_STOP;
-			RFState &= ~RF_RX_DONE;
- 		}
-    }
+		}
+	}
+
 }
+
+///* GPIO pin(DIO0) interrupt used for send and receive  */
+//void GPCDEF_IRQHandler(void)
+//{
+//
+//    if(GPIO_GET_INT_FLAG(PD, BIT3))
+//    {
+//       GPIO_CLR_INT_FLAG(PD, BIT3);
+// 	   if(PD3)
+// 		{
+//			RFState |= RF_RX_DONE;
+//			RFState &= ~RF_BUSY;
+//			if(txFlag)
+//			{
+//				txFlag=0;
+//				recFlag=0;
+//			}
+//			else
+//			{
+//				recFlag=1;
+//			}
+// 		}
+// 		else
+// 		{
+//			RFState |= RF_STOP;
+//			RFState &= ~RF_RX_DONE;
+// 		}
+//    }
+//}
 /******Send Data to Receiver *******/
 void send(uint8_t source,uint8_t Dest, uint16_t sourId,uint16_t DestId,uint8_t Data,uint8_t *value,uint8_t length)
 {
@@ -765,11 +808,25 @@ void SYS_Init(void)
       	CLK_SetModuleClock(TMR1_MODULE, CLK_CLKSEL1_TMR1SEL_PCLK0, 0);
 
 
-      	/* Gpio init for rfm69 trans receive */
-			GPIO_SetMode(PD, BIT3, GPIO_MODE_INPUT);
-			GPIO_EnableInt(PD, 3, GPIO_INT_BOTH_EDGE);
+//      	/* Gpio init for rfm69 trans receive */
+//			GPIO_SetMode(PD, BIT3, GPIO_MODE_INPUT);
+//			GPIO_EnableInt(PD, 3, GPIO_INT_BOTH_EDGE);
 
-            NVIC_EnableIRQ(GPCDEF_IRQn);
+      	  GPIO_SetMode(PD, BIT3, GPIO_MODE_INPUT);
+
+      		GPIO_EnableInt(PD, 3, GPIO_INT_RISING);
+
+			NVIC_SetPriority(EINT135_IRQn, 0);   // Highest priority
+
+			NVIC_EnableIRQ(EINT135_IRQn);
+
+			//timer0 initial
+			CLK_EnableModuleClock(TMR0_MODULE);
+			CLK_SetModuleClock(TMR0_MODULE, CLK_CLKSEL1_TMR0SEL_PCLK0, 0);
+			TIMER_Start(TIMER0);
+
+
+//            NVIC_EnableIRQ(GPCDEF_IRQn);
 
 
 //   		//timer2 initial
@@ -795,7 +852,7 @@ int main()
     UART_EnableInt(UART1, (UART_INTEN_RDAIEN_Msk ));
 
     /* Init SPI */
-        SPI_Init();
+//        SPI_Init();
 
         UART2_Init();
         UART_EnableInt(UART2, (UART_INTEN_RDAIEN_Msk ));
@@ -804,7 +861,7 @@ int main()
     	TIMER_EnableInt(TIMER1);
     	TIMER_Start(TIMER1);
     	NVIC_EnableIRQ(TMR1_IRQn);
-    //
+
 //    	TIMER_Open(TIMER2, TIMER_PERIODIC_MODE, 8);
 //    	TIMER_Start(TIMER2);
 //    	TIMER_EnableInt(TIMER2);
@@ -812,10 +869,15 @@ int main()
 
     	UART_Write(UART2, "EDEL SMART DEVICES - 001\r\n", strlen("EDEL SMART DEVICES - 001\r\n"));
 
-//        /* reset RFM69 */
-//        reset_rfm69();
-//        /* Init RFM69 */
-//        InitRFChip();
+
+    	UART_Write(UART1,"AT\r\n",strlen("AT\r\n"));
+
+        /* reset RFM69 */
+    	/* Init SPI */
+    	SPI0_Init();
+    	reset_rfm69();
+    	tick_start();
+    	InitRFChipRx();
 //
 //       set_required_baud_rate_4800();
 //       set_required_baud_rate();
@@ -901,6 +963,8 @@ int main()
 
   				 date_time_function();
 
+  				 count_1=0;
+
   				memset(UART1_RX_BUF,0,sizeof(UART1_RX_BUF));
   			}
     	  if (ack_received)
@@ -944,6 +1008,8 @@ int main()
 
     		 gsmState=GSM_HTTP_QUERY;
 
+    		 count_1=0;
+
     		 memset(UART1_RX_BUF,0,sizeof(UART1_RX_BUF));
 
 //    		  loopCount=0;
@@ -955,20 +1021,9 @@ int main()
     	  {
     		  display_chek=1;
 
-    		  mqtt_recevied_data();
+//    		  mqtt_recevied_data();
 
     		  ack_chek=0;
-
-    		  UART_Write(UART2,"\n",strlen("\n"));
-
-    		  for (int i = 0; i < data_len; i++)
-        	  {
-				  sprintf(hex, "%02X ", (unsigned char)CarBlackImage[i]);
-				  UART_Write(UART2, "0x", 2);
-				  UART_Write(UART2, hex, 3);
-        	  }
-
-        	  UART_Write(UART2,"\n",strlen("\n"));
 
     		  gsmState=GSM_MQTT_REPORT_ACK;
 
@@ -980,17 +1035,34 @@ int main()
 
     		  loopCount=1;
 
-//    		  count_1=1;
+     		  UART_Write(UART2,"looop_count=",strlen("looop_count="));
 
-//    		  UART_Write(UART2,CarBlackImage,sizeof(CarBlackImage));
+        	  UART_Write(UART2,itoa(loopCount,counter_buffer,10),strlen(counter_buffer));
 
-    		  UART_Write(UART2,"looop_count=",strlen("looop_count="));
+        	 UART_Write(UART2,"\n",strlen("\n"));
 
-    		  UART_Write(UART2,itoa(loopCount,counter_buffer,10),strlen(counter_buffer));
+    		  mqtt_recevied_data();
 
-    		  UART_Write(UART2,"\n",strlen("\n"));
+   			TIMER_DisableInt(TIMER1);
+
+       		  UART_Write(UART2,"\n",strlen("\n"));
+
+        		  for (int i = 0; i < data_len; i++)
+            	  {
+    				  sprintf(hex, "%02X ", (unsigned char)CarBlackImage[i]);
+    				  UART_Write(UART2, "0x", 2);
+    				  UART_Write(UART2, hex, 3);
+            	  }
+
+            	  UART_Write(UART2,"\n",strlen("\n"));
+
+     		    count_1=0;
 
     		  memset(UART1_RX_BUF,0,sizeof(UART1_RX_BUF));
+
+    		  send_test_packet();
+
+   	       TIMER_EnableInt(TIMER1);
 
     	  }
           /*if(gsmState==GSM_MQTT_REPORT_ACK)
@@ -1580,9 +1652,10 @@ void gsm_http_query()
 		  UART_Write(UART1, "AT+QHTTPREAD=",strlen("AT+QHTTPREAD="));
 		  UART_Write(UART1, "500",strlen("500"));
 //		  display_chek=0;
+		  memset(UART1_RX_BUF,0,sizeof(UART1_RX_BUF));
 		  count_1=0;
 		  UART_Write(UART1, "\r\n",strlen("\r\n"));
-		  memset(UART1_RX_BUF,0,sizeof(UART1_RX_BUF));
+
 
 		break;
 	case 13:
@@ -1622,20 +1695,33 @@ void gsm_mqtt_report_ack()
 		break;
 	case 2:
 
-		pay_load_assing();
-		break;
+			break;
 	case 3:
-        pay_load_size=strlen(pay_load_buffer);
-        itoa(pay_load_size,pay_load_size_buffer,10);
-		break;
+
+			break;
 	case 4:
 
-
-		break;
+			break;
 	case 5:
 
-		break;
+			break;
 	case 6:
+
+		pay_load_assing();
+		break;
+	case 7:
+        pay_load_size=strlen(pay_load_buffer);
+
+        itoa(pay_load_size,pay_load_size_buffer,10);
+		break;
+	case 8:
+
+
+		break;
+	case 9:
+
+		break;
+	case 10:
 		UART_Write(UART1, "AT+QMTPUBEX=",strlen("AT+QMTPUBEX="));
 		UART_Write(UART1, "0", 1);
 		UART_Write(UART1, ",", 1);
@@ -1653,37 +1739,37 @@ void gsm_mqtt_report_ack()
 		UART_Write(UART1, "\r\n", strlen("\r\n"));
 
 		break;
-	case 7:
-
-	    break;
-	case 8:
-
-		break;
-	case 9:
-		break;
-
-	case 10:
-
-		break;
 	case 11:
 
 	    break;
 	case 12:
 
+		break;
+	case 13:
+		break;
+
+	case 14:
+
+		break;
+	case 15:
+
+	    break;
+	case 16:
+
 		UART_Write(UART1, pay_load_buffer, strlen(pay_load_buffer));
 	    UART_Write(UART1, "\r\n", strlen("\r\n"));
 
 		break;
-	case 13:
+	case 17:
 
 		break;
-	case 14:
+	case 18:
          memset(pay_load_buffer,0,sizeof(pay_load_buffer));
          memset(UART1_RX_BUF,0,sizeof(UART1_RX_BUF));
 		break;
-	case 15:
+	case 19:
 		break;
-	case 16:
+	case 20:
 		gsmState = 	GSM_SLEEP;
 		loopCount = 0;
 		break;
@@ -1711,8 +1797,8 @@ void gsm_idle()
 	case 4:
 		break;
 	case 5:
-		 count_1=0;
-		 UART_Write(UART1, "AT+QLTS=2\r\n", strlen("AT+QLTS=2\r\n"));
+//		 count_1=0;
+//		 UART_Write(UART1, "AT+QLTS=2\r\n", strlen("AT+QLTS=2\r\n"));
 		break;
 	case 6:
 		break;
@@ -1826,19 +1912,11 @@ void send_image_packet(void)
 }
 void mqtt_recevied_data()
 {
-//	size_t data_len;
+
 
 	if((memmem(UART1_RX_BUF, sizeof(UART1_RX_BUF), "START", strlen("START")))!= NULL)
 	{
 		temp_pointer=memmem(UART1_RX_BUF, sizeof(UART1_RX_BUF), "START", strlen("START"));
-
-//		memcpy(CarBlackImage,temp_pointer,sizeof(CarBlackImage));
-
-//		memset(CarBlackImage,0,sizeof(CarBlackImage));
-
-//		UART_Write(UART2,CarBlackImage,sizeof(CarBlackImage));
-
-//		temp_pointer=strtok(temp_pointer,"END");
 
 		if(temp_pointer!=NULL)
 		{
@@ -2032,6 +2110,182 @@ void pay_load_assing()
 			strcat(pay_load_buffer,DBQUOTE);
 			strcat(pay_load_buffer,"}");
 }
+
+/* One 65-byte packet, ACK listen, then RX. Clears test_send so the next loop stays in RX. */
+static void send_test_packet(void)
+{
+	uint8_t buf[65];
+	uint8_t i;
+	uint8_t rc;
+	uint16_t sent_seq;
+	uint16_t next_seq;
+	uint32_t ack_t0;
+
+	/* 65 bytes: marker, sequence, index bytes, marker. SendRfFrame waits for PacketSent only. */
+	sent_seq = tx_seq;
+	for (i = 0; i < 65; i++)
+		buf[i] = i;
+	buf[0] = 0x00;
+	buf[1] = (uint8_t)(sent_seq >> 8);
+	buf[2] = (uint8_t)sent_seq;
+	buf[64] = 0xFF;
+	rc = ERROR;
+	for(uint16_t i=0;i < no_of_times_send;i++)
+	{
+	  memcpy(RFbuffer,(CarBlackImage+send_number_of_byte),NO_OF_BYTE_PER_PACKET);
+
+	  SendRfFrame(RFbuffer, NO_OF_BYTE_PER_PACKET, &rc);
+
+	  send_number_of_byte+=NO_OF_BYTE_PER_PACKET;
+
+	  TIMER_Delay(TIMER0, 5);
+
+	  if((i > 0) &&(i == 49))
+	  {
+			TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+
+	  }
+	  if((i > 49) &&(i == 99))
+	  {
+			TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+
+
+	  }
+	  if((i > 99) &&(i == 149))
+	  {
+			TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+
+	  }
+	  if((i > 149) &&(i == 199))
+	  {
+		TIMER_Delay(TIMER0, 1000000);
+		TIMER_Delay(TIMER0, 1000000);
+		TIMER_Delay(TIMER0, 1000000);
+//		TIMER_Delay(TIMER0, 1000000);
+//		TIMER_Delay(TIMER0, 1000000);
+
+	  }
+	  if((i > 199) &&(i == 249))
+	  {
+			TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+
+
+	  }
+	  if((i > 249) &&(i == 299))
+	  {
+			TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+
+
+	  }
+	  if((i > 299) &&(i == 349))
+	  {
+			TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+
+
+	  }
+	  if((i > 349) &&(i == 399))
+	  {
+			TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+
+	  }
+	  if((i > 399) &&(i == 449))
+	  {
+			TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+
+	  }
+	  if((i > 449) &&(i == 474))
+	  {
+			TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+//				TIMER_Delay(TIMER0, 1000000);
+
+
+	  }
+	}
+	  send_number_of_byte=0;
+	/* Radio is in sleep after TX. Enter RX immediately so the ACK is not missed. */
+//	ack_listen_begin(&ack_t0);
+	/* Always listen after SendRfFrame. Do not skip if RxReady was a few ms late.
+	   1000 ms ACK listen; each seq is sent once. */
+//	wait_ack_seq(sent_seq, ack_t0);
+	/* Always increment after ACK OK or 1 s timeout. Never retransmit this seq. */
+	next_seq = (uint16_t)(sent_seq + 1);
+	tx_seq = next_seq;
+	/* One packet only. SendRfFrame sleeps the radio; ACK listen already entered RX. */
+	tick_start();
+	back_to_rx();
+	test_send = 0;
+}
+static void tick_start(void)
+{
+	uint32_t clk;
+
+	clk = TIMER_GetModuleClock(TIMER0);
+	TIMER_Stop(TIMER0);
+	TIMER0->CTL = TIMER_CONTINUOUS_MODE | 255UL;
+	TIMER0->CMP = 0x00FFFFFFUL;
+	TIMER_ResetCounter(TIMER0);
+	TIMER_Start(TIMER0);
+	tick_per_ms = (clk / 256UL) / 1000UL;
+	if (tick_per_ms == 0)
+		tick_per_ms = 1;
+}
+static void back_to_rx(void)
+{
+	if (ReadRegister(REG_IRQFLAGS2) & RF_IRQFLAGS2_PAYLOADREADY)
+	{
+		RFState |= RF_RX_DONE;
+		RFState &= ~RF_BUSY;
+		recFlag = 1;
+		fifo_overrun_acted = 0;
+		return;
+	}
+	if (((uint8_t)ReadRegister(REG_OPMODE) & 0x1C) == RF_RECEIVER)
+	{
+		RFState |= RF_BUSY;
+		RFState &= ~RF_STOP;
+		fifo_overrun_acted = 0;
+		return;
+	}
+	RFState |= RF_STOP;
+	receiveInit();
+	fifo_overrun_acted = 0;
+}
+
 uint32_t UART_Write_main(UART_T *uart, uint8_t *pu8TxBuf,uint32_t u32WriteBytes)
 {
 	uint32_t u32Count = 0;
